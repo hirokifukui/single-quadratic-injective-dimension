@@ -49,7 +49,7 @@ cd lean
 
 ## Changes
 
-- **1.0.1** (documentation only; Lean sources, `lakefile.lean`, `lake-manifest.json`, gate and required-root list unchanged from 1.0.0): the upstream-cache scope is stated precisely; the prerequisites (Bash, curl) and the fresh-directory assumption are stated; the role of `#dep_check` versus the gate is stated; `CITATION.cff` states the licence split; release check repeated from a freshly extracted archive that already contains the shipped `lake-manifest.json` (`lean/logs_release/*_v1.0.1.log`). The 1.0.0 check had started without a top-level manifest and generated the one that 1.0.0 ships.
+- **1.0.1** (documentation and PDF fonts only; Lean sources, `lakefile.lean`, `lake-manifest.json`, gate and required-root list unchanged from 1.0.0): the upstream-cache scope is stated precisely; the prerequisites (Bash, curl) and the fresh-directory assumption are stated; the role of `#dep_check` versus the gate is stated; `CITATION.cff` states the licence split; the paper PDF is rebuilt with vector (Type 1) fonts (Latin Modern) instead of bitmap Type 3 fonts, text unchanged; release check repeated from a freshly extracted archive that already contains the shipped `lake-manifest.json` (`lean/logs_release/*_v1.0.1.log`). The 1.0.0 check had started without a top-level manifest and generated the one that 1.0.0 ships.
 - **1.0.0** (2026-10-04): first release.
 
 ## Licensing
