@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+title: "Single quadratic equations do not compress integer dimension: supplementary Lean 4 development"
+abstract: >-
+  Supplementary Lean 4 development for the paper "Single quadratic equations do not compress integer
+  dimension". It contains a composed formal statement of the structural dichotomy (Theorem 2) and
+  formal proofs of Corollaries 3 and 4 (polynomial graphs; failure of closure under composition and
+  conjunction), built against the archived development doi:10.5281/zenodo.23053094 (pinned by commit),
+  with an audit gate on the axiom reports and on name-based dependency checks. The paper is included.
+authors:
+  - family-names: "Fukui"
+    given-names: "Hiroki"
+    orcid: "https://orcid.org/0009-0008-7122-522X"
+    affiliation: "Research Institute of Criminal Psychiatry / Sex Offender Medical Center, Tokyo, Japan; Department of Neuropsychiatry, Kyoto University, Kyoto, Japan"
+version: "1.0.0"
+date-released: "2026-10-04"
+license: "MIT"
+repository-code: "https://github.com/hirokifukui/single-quadratic-injective-dimension"
+doi: "10.5281/zenodo.23132400"
+keywords:
+  - Diophantine definability
+  - quadratic Diophantine equations
+  - injective coding
+  - Lean 4
+  - mathlib

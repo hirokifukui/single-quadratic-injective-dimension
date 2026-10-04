@@ -1,0 +1,1 @@
+GATE SUMMARY: axiom_reports=570 required_axiom_roots=30 depcheck_ok=8 required_depcheck_roots=8 failures=0

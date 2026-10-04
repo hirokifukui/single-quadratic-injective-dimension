@@ -1,0 +1,50 @@
+{
+  "_comment": "S68-04 required-roots manifest for the paper's Appendix A. Fully qualified names exactly as printed by #print axioms / #dep_check in the lake build log. Release audit fails if any name is missing, duplicated, or reported with a non-std-3 axiom / DEPCHECK FAIL.",
+  "axiom_roots": [
+    "DiophCompression.ResearchUpgrade.singleQuadratic_sharp_iff",
+    "DiophCompression.ResearchUpgrade.singleQuadratic_injective_dimension_sharp",
+    "theorem2_sealed",
+    "DiophCompression.ResearchUpgrade.graphData_of_singleQuadraticDefinable",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.summit_of_defines",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.range_polarMapQ_eq_dualAnnihilator_ker",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.zLinQ_radicalQ_eq_zero",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.outCoordQ_radicalQ_eq_zero",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_affine_centre_of_all_inputs",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.completeSquare",
+    "DiophCompression.ResearchUpgrade.dim_le_of_linearGrowth_injective",
+    "DiophCompression.ResearchUpgrade.not_injective_of_weakVectorCosetNF",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.branch_exhaustive",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.weakVectorCosetNF_of_linearBranch_general",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_isotropic_nonorthogonal_of_nonradical",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_rational_solution_of_isotropic",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.weakVectorCosetNF_of_isotropic",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.linearGrowth_of_offCentre_radical",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.linearGrowth_of_semidefinite_defines",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.outCoord_sq_le",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.linearGrowth_of_negSemidefinite_defines",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_visible_orthogonal",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.not_isSquare_of_quotientAnisotropic",
+    "DiophCompression.ResearchUpgrade.exists_pell_unit_congr",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.pell_branch_contradiction",
+    "DiophCompression.ResearchUpgrade.exists_graph_injective_pad",
+    "DiophCompression.ResearchUpgrade.atomGraphZZ_capacity_eq_one",
+    "DiophCompression.ResearchUpgrade.SelectionS67.polyFn_SE2_iff",
+    "DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_composition",
+    "DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_conjunction"
+  ],
+  "depcheck_roots": [
+    "DiophCompression.ResearchUpgrade.singleQuadratic_sharp_iff",
+    "DiophCompression.ResearchUpgrade.singleQuadratic_injective_dimension_sharp",
+    "theorem2_sealed",
+    "DiophCompression.ResearchUpgrade.exists_pell_unit_congr",
+    "DiophCompression.ResearchUpgrade.SelectionS67.polyFn_SE2_iff",
+    "DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_composition",
+    "DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_conjunction",
+    "DiophCompression.ResearchUpgrade.QuadraticGraphData.summit_of_defines"
+  ],
+  "forbidden_substrings_registry": ["TCER", "TernaryCoset", "DPRM", "Grunewald", "uniformGS", "perEquationGS", "globalGS", "ProjectionDichotomy", "projectionDichotomy", "quadraticProjection", "graphZZ_singleQuadratic_growth", "singleQuadratic_function_quadratic_growth"],
+  "forbidden_substrings_extra": {
+    "DiophCompression.ResearchUpgrade.SelectionS67.polyFn_SE2_iff": ["UniformCodeGS", "uniformCodeGS", "polynomial_graph_singleQuadratic_iff", "polynomial_graph_not_singleQuadratic_of_degree_ge_three"],
+    "DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_composition": ["fourth_power_graph_not_singleQuadratic", "singleQuadratic_functions_not_closed_under_composition"]
+  }
+}
