@@ -1,6 +1,6 @@
 # Single quadratic equations do not compress integer dimension — supplementary Lean 4 development
 
-Version 1.0.0 (2026-10-04). Author: Hiroki Fukui. DOI: [10.5281/zenodo.23132400](https://doi.org/10.5281/zenodo.23132400).
+Version 1.0.1 (2026-10-04). Author: Hiroki Fukui. DOI of this version: [10.5281/zenodo.23132774](https://doi.org/10.5281/zenodo.23132774); all versions: [10.5281/zenodo.23132399](https://doi.org/10.5281/zenodo.23132399). The paper cites v1.0.0 ([10.5281/zenodo.23132400](https://doi.org/10.5281/zenodo.23132400)); v1.0.1 has the same Lean sources and corrects the documentation (see *Changes*).
 
 ## The paper
 
@@ -25,25 +25,32 @@ The paper is self-contained: every proof is written out in it. The formalization
 
 The paper's Appendix A gives the full correspondence table. The extension of Corollary 3 to integer-valued polynomials with rational coefficients is proved in the paper only.
 
-`lean/` depends on the archived development by a git pin (`lakefile.lean`), so the archived sources are fetched, not copied. The library `SelectionS65` contains the modules the paper uses and their imports: `Corr`, `PolyGraph`, `Conjunction`, `DepCheck`, `Relations`, `NormDim`, `FourSq`, `QuadForm`, `Arith`, and the audit module `PaperAudit`. Some imported modules also contain statements about norm selections that the paper does not use; a few of those take the ternary-coset input TCER as an explicit hypothesis. No paper statement depends on them (see the dependency checks below). The file headers say "scratch, not sealed"; they were the working names and were left byte-identical to the sources that were audited.
+`lean/` depends on the archived development by a git pin (`lakefile.lean`), so the archived sources are fetched, not copied. The library `SelectionS65` contains the modules the paper uses and their imports: `Corr`, `PolyGraph`, `Conjunction`, `DepCheck`, `Relations`, `NormDim`, `FourSq`, `QuadForm`, `Arith`, and the audit module `PaperAudit`. Some imported modules also contain statements about norm selections that the paper does not use; a few of those take the ternary-coset input TCER as an explicit hypothesis. No paper statement depends on them (see the dependency checks below). Some file headers say "scratch, not sealed" or carry session labels (S66, S67): these are internal working notes from development, not the status of this release; the files were left byte-identical to the sources that were audited.
 
 ## Trust boundary
 
 - **Axioms.** Each of the 30 declarations listed in Appendix A depends only on `propext`, `Classical.choice`, `Quot.sound` (no `sorryAx`, no `Lean.ofReduceBool`).
-- **Dependency checks (†).** For eight declarations, `#dep_check` walks the transitive closure of the constants used and fails if a constant name contains any string from a fixed list: the decidability results for quadratic equations, DPRM, the projection theorem and growth bounds of the archived development, and its conditional hypotheses (including TCER). This is a check on **names** against that list, not a semantic test.
+- **Dependency checks (†).** For eight declarations, `#dep_check` walks the transitive closure of the constants used and reports `DEPCHECK FAIL` if a constant name contains any string from a fixed list (it reports; it does not stop `lake build`; the mandatory audit gate rejects any FAIL): the decidability results for quadratic equations, DPRM, the projection theorem and growth bounds of the archived development, and its conditional hypotheses (including TCER). This is a check on **names** against that list, not a semantic test.
 - **Statement fidelity.** That a formal statement says what the paper says rests on reading both (Appendix A notes the differences); the kernel does not certify it.
-- **mathlib** is taken at commit `d46bd45` with its upstream `.olean` cache; everything else is compiled from source by the replay.
+- **Upstream cache.** mathlib is taken at commit `d46bd45`. `lake exe cache get` supplies compiled files for mathlib and for the upstream packages its cache covers (Batteries, Aesop, Qq, ProofWidgets and the other mathlib dependencies). The archived development (DiophCompression, MPUP, ResearchUpgrade) and this development (SelectionS65) are compiled from source: 263 modules in the release check.
 
 ## Replay
 
-Requirements: [elan](https://github.com/leanprover/elan) (the toolchain `leanprover/lean4:v4.31.0-rc1` is read from `lean/lean-toolchain`), git, python3, network access.
+Requirements: Bash, [elan](https://github.com/leanprover/elan) (the toolchain `leanprover/lean4:v4.31.0-rc1` is read from `lean/lean-toolchain`), git, curl (used by the mathlib cache), python3, network access (GitHub and the mathlib cache server).
+
+Run it in a fresh checkout or a freshly extracted archive. In a directory that already has `lean/.lake/`, `lake build` is incremental and reuses what is there.
 
 ```bash
 cd lean
 ./replay.sh          # lake exe cache get; lake build; audit gate. Exit 0 only if both pass.
 ```
 
-`replay.sh` runs with `set -euo pipefail`. The audit gate (`lean/scripts/audit_gate.py`, with `lean/scripts/required_roots.json`) exits non-zero unless each of the 30 required declarations has exactly one standard-axiom report, each of the 8 dependency-check declarations has exactly one `DEPCHECK OK`, no axiom report is left unparsed, and the forbidden-name list in each source contains the registry. The build log and gate output of the release check are in `lean/logs_release/`.
+`replay.sh` runs with `set -euo pipefail`. The audit gate (`lean/scripts/audit_gate.py`, with `lean/scripts/required_roots.json`) exits non-zero unless each of the 30 required declarations has exactly one standard-axiom report, each of the 8 dependency-check declarations has exactly one `DEPCHECK OK`, no axiom report is left unparsed, and the forbidden-name list in each source contains the registry. `lake build` alone succeeding is not the check: the replay succeeds only if the gate also exits 0. The logs of the release checks are in `lean/logs_release/`.
+
+## Changes
+
+- **1.0.1** (documentation only; Lean sources, `lakefile.lean`, `lake-manifest.json`, gate and required-root list unchanged from 1.0.0): the upstream-cache scope is stated precisely; the prerequisites (Bash, curl) and the fresh-directory assumption are stated; the role of `#dep_check` versus the gate is stated; `CITATION.cff` states the licence split; release check repeated from a freshly extracted archive that already contains the shipped `lake-manifest.json` (`lean/logs_release/*_v1.0.1.log`). The 1.0.0 check had started without a top-level manifest and generated the one that 1.0.0 ships.
+- **1.0.0** (2026-10-04): first release.
 
 ## Licensing
 

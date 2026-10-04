@@ -7,16 +7,18 @@ abstract: >-
   formal proofs of Corollaries 3 and 4 (polynomial graphs; failure of closure under composition and
   conjunction), built against the archived development doi:10.5281/zenodo.23053094 (pinned by commit),
   with an audit gate on the axiom reports and on name-based dependency checks. The paper is included.
+  Licences: the MIT licence applies to the Lean sources and scripts; the included paper and the
+  documentation are under CC BY 4.0 (see LICENSING.md).
 authors:
   - family-names: "Fukui"
     given-names: "Hiroki"
     orcid: "https://orcid.org/0009-0008-7122-522X"
     affiliation: "Research Institute of Criminal Psychiatry / Sex Offender Medical Center, Tokyo, Japan; Department of Neuropsychiatry, Kyoto University, Kyoto, Japan"
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-10-04"
 license: "MIT"
 repository-code: "https://github.com/hirokifukui/single-quadratic-injective-dimension"
-doi: "10.5281/zenodo.23132400"
+doi: "10.5281/zenodo.23132774"
 keywords:
   - Diophantine definability
   - quadratic Diophantine equations
