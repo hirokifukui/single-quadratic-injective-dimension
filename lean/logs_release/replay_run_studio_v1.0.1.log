@@ -1,0 +1,2627 @@
+=== toolchain: leanprover/lean4:v4.31.0-rc1
+=== upstream cache: mathlib d46bd45 and the upstream packages its cache covers; the archived development and SelectionS65 are built from source
+info: mpup-lean: cloning https://github.com/hirokifukui/single-quadratic-definability.git
+info: mpup-lean: checking out revision 'e9b1817eb1c233b55abbf29413919d5a83ff09c0'
+info: mathlib: cloning https://github.com/leanprover-community/mathlib4.git
+info: mathlib: checking out revision 'd46bd45325c5cdf0ecf5cee0f5ff6d6e3586eb35'
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision '9196a81145e1e291a1469288e77392b0e1b9a493'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision 'c5d5b8fe6e5158def25cd28eb94e4141ad97c843'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision '6db47de43aa7f516708053ae2fdadd29dd9baaaa'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision '85bb7e7637e84a7d9803be7d954579fdae42c64b'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision 'fafca80479ff95e041d84373dda7122adf1295f2'
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision '8d33324ee877e9735d2829bc6f1f439e60cf98b1'
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision '708b057842c4cd0845fba132bd94b08493f6fc42'
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision '48bdcff4c5fa27e09028f9f330e59baa0d4640cf'
+✔ [4/24] Built Cache.Init (270ms)
+✔ [5/24] Built Batteries.Data.String.Basic (319ms)
+✔ [6/24] Built Cache.Lean (331ms)
+✔ [7/24] Built Batteries.Data.Array.Match (477ms)
+✔ [8/24] Built Batteries.Data.String.Basic:c.o (211ms)
+✔ [9/24] Built Cache.Lean:c.o (196ms)
+✔ [10/24] Built Cache.Init:c.o (239ms)
+✔ [11/24] Built Batteries.Tactic.OpenPrivate (626ms)
+✔ [12/24] Built Batteries.Data.Array.Match:c.o (139ms)
+✔ [13/24] Built Batteries.Data.String.Matcher (202ms)
+✔ [14/24] Built Batteries.Data.String.Matcher:c.o (101ms)
+✔ [15/24] Built Batteries.Tactic.OpenPrivate:c.o (539ms)
+✔ [16/24] Built Cache.IO (787ms)
+✔ [17/24] Built Cache.Hashing (477ms)
+✔ [18/24] Built Cache.IO:c.o (673ms)
+✔ [19/24] Built Cache.Hashing:c.o (200ms)
+✔ [20/24] Built Cache.Requests (994ms)
+✔ [21/24] Built Cache.Main (588ms)
+✔ [22/24] Built Cache.Main:c.o (313ms)
+✔ [23/24] Built Cache.Requests:c.o (1.0s)
+✔ [24/24] Built cache:exe (1.0s)
+Decompressing 8516 already-cached file(s) (4 already decompressed)
+Current branch: HEAD
+Using cache (Azure) from origin: (some leanprover-community/mathlib4)
+No files to download
+Decompressed 8516 already-cached file(s)
+Completed successfully in 105980 ms!
+=== lake build
+✔ [7439/7629] Built SelectionS65.DepCheck (11s)
+ℹ [8538/8800] Built DiophCompression.IntPrimrec (10s)
+info: DiophCompression/IntPrimrec.lean:238:0: 'DiophCompression.primrec₂_int_add' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/IntPrimrec.lean:239:0: 'DiophCompression.primrec₂_int_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/IntPrimrec.lean:240:0: 'DiophCompression.primrec_eval_of_coords' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/IntPrimrec.lean:241:0: 'DiophCompression.computable_eval_of_coords' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/IntPrimrec.lean:242:0: 'DiophCompression.primrec_int_pow' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/IntPrimrec.lean:243:0: 'DiophCompression.computable_eval_mvPolynomial' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8539/8800] Built ResearchUpgrade.SaturatedLattice (11s)
+warning: ResearchUpgrade/SaturatedLattice.lean:54:56: This simp argument is unused:
+  mul_one
+
+Hint: Omit it from the simp argument list.
+  simp only [map_sum, map_smul, Module.Basis.repr_self, m̵u̵l̵_̵o̵n̵e̵,̵ ̵Finsupp.coe_finsetSum, Finset.sum_apply,
+  ̲  ̲ ̲ ̲Finsupp.single_apply, snf.f.injective.eq_iff, Finset.sum_ite_eq', Finset.mem_univ,
+  ̲  ̲ ̲ ̲if_true] at key
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SaturatedLattice.lean:55:4: This simp argument is unused:
+  snf.f.injective.eq_iff
+
+Hint: Omit it from the simp argument list.
+  simp only [map_sum, map_smul, Module.Basis.repr_self, mul_one, Finsupp.coe_finsetSum,
+  ̲  ̲ ̲ ̲Finset.sum_apply, Finsupp.single_apply,
+  ̵  ̵ ̵ ̵s̵n̵f̵.̵f̵.̵i̵n̵j̵e̵c̵t̵i̵v̵e̵.̵e̵q̵_̵i̵f̵f̵,̵ ̵Finset.sum_ite_eq', Finset.mem_univ, if_true] at key
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SaturatedLattice.lean:55:28: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp only [map_sum, map_smul, Module.Basis.repr_self, mul_one, Finsupp.coe_finsetSum,
+  ̲  ̲ ̲ ̲Finset.sum_apply, Finsupp.single_apply,
+  ̵  ̵ ̵ ̵snf.f.injective.eq_iff, Finset.s̵u̵m_̵i̵t̵e_̵e̵q̵'̵,̵ ̵F̵i̵n̵s̵e̵t̵.̵me̵m̵_univ, if_true] at key
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SaturatedLattice.lean:55:48: This simp argument is unused:
+  Finset.mem_univ
+
+Hint: Omit it from the simp argument list.
+  simp only [map_sum, map_smul, Module.Basis.repr_self, mul_one, Finsupp.coe_finsetSum,
+  ̲  ̲ ̲ ̲Finset.sum_apply, Finsupp.single_apply,
+  ̵  ̵ ̵ ̵snf.f.injective.eq_iff, Finset.sum_ite_eq',
+  ̲ F̵i̵n̵s̵e̵t̵.̵m̵e̵m̵_̵u̵n̵i̵v̵,̵  ̲ ̲if_true] at key
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SaturatedLattice.lean:59:58: This simp argument is unused:
+  Finsupp.coe_finsetSum
+
+Hint: Omit it from the simp argument list.
+  simp only [Finsupp.smul_single, smul_eq_mul, mul_one, F̵i̵n̵s̵u̵p̵p̵.̵c̵o̵e̵_̵f̵i̵n̵s̵e̵t̵S̵u̵m̵,̵Finset.sum_apply, Finsupp.single_apply,
+  ̲  ̲ ̲ ̲ ̲ ̲snf.f.injective.eq_iff, Finset.sum_ite_eq', Finset.mem_univ, if_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SaturatedLattice.lean:60:6: This simp argument is unused:
+  Finset.sum_apply
+
+Hint: Omit it from the simp argument list.
+  simp only [Finsupp.smul_single, smul_eq_mul, mul_one, Finsupp.coe_finsetSum,
+        Finse̵t̵.̵s̵um̵_̵a̵ppl̵y̵,̵ ̵F̵i̵n̵s̵u̵p̵p̵.single_apply, snf.f.injective.eq_iff,
+  ̵  ̵ ̵ ̵ ̵ ̵Finset.sum_ite_eq', Finset.mem_univ, if_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8540/8800] Built ResearchUpgrade.LinearDvd (11s)
+✔ [8541/8800] Built ResearchUpgrade.ParityWitness (11s)
+✔ [8542/8800] Built ResearchUpgrade.Hensel (11s)
+⚠ [8543/8800] Built ResearchUpgrade.CosetNormalForm (11s)
+warning: ResearchUpgrade/CosetNormalForm.lean:117:6: 'push_cast at hq ⊢' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ResearchUpgrade/CosetNormalForm.lean:128:4: 'push_cast at hq ⊢' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ResearchUpgrade/CosetNormalForm.lean:133:62: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  simp [sq1, QuadForm.eval, castQ, dotProduct, Matrix.mulVec,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/CosetNormalForm.lean:150:2: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [8544/8800] Built ResearchUpgrade.AnchoredSection (12s)
+✔ [8545/8800] Built ResearchUpgrade.NormValuation (12s)
+✔ [8546/8800] Built ResearchUpgrade.SeparatingPrime (14s)
+⚠ [8547/8800] Built ResearchUpgrade.PellStep (14s)
+warning: ResearchUpgrade/PellStep.lean:127:34: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+✔ [8548/8800] Built ResearchUpgrade.Counting (15s)
+✔ [8549/8800] Built ResearchUpgrade.GeneralResidual (10s)
+✔ [8550/8800] Built ResearchUpgrade.DimensionFromCoset (10s)
+⚠ [8551/8800] Built ResearchUpgrade.GraphVocabulary (10s)
+warning: ResearchUpgrade/GraphVocabulary.lean:136:7: Variable name `x` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/GraphVocabulary.lean:136:9: Variable name `y` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/GraphVocabulary.lean:232:53: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  simp [IntQuad.eval, pt, dotProduct, Matrix.mulVec, ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵o̵n̵e̵,̵
+      Fintype.sum_sum_type] at e00 e01 e02 e10 e11 e12
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8552/8800] Built ResearchUpgrade.TCERBridge (23s)
+warning: ResearchUpgrade/TCERBridge.lean:88:36: This simp argument is unused:
+  Fin.sum_univ_three
+
+Hint: Omit it from the simp argument list.
+  simp [QS, e1, dotProduct, mulVec, F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵t̵h̵r̵e̵e̵,̵ ̵Pi.single_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/TCERBridge.lean:110:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/TCERBridge.lean:113:21: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/TCERBridge.lean:119:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/TCERBridge.lean:109:28: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [e1,̵ ̵P̵i̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/TCERBridge.lean:124:42: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [e1,̵ ̵P̵i̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/TCERBridge.lean:197:61: This simp argument is unused:
+  smul_eq_mul
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵s̵m̵u̵l̵_̵e̵q̵_̵m̵u̵l̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/TCERBridge.lean:413:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/TCERBridge.lean:451:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/TCERBridge.lean:468:15: This simp argument is unused:
+  MvPolynomial.eval_sum
+
+Hint: Omit it from the simp argument list.
+  simp [f,̵ ̵M̵v̵P̵o̵l̵y̵n̵o̵m̵i̵a̵l̵.̵e̵v̵a̵l̵_̵s̵u̵m̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/TCERBridge.lean:829:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8553/8800] Built ResearchUpgrade.Controls (12s)
+✔ [8554/8800] Built ResearchUpgrade.DiscriminantRigidity (10s)
+ℹ [8555/8800] Built MPUP.Spec (23s)
+info: MPUP/Spec.lean:101:0: 'MPUP.MPUP_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MPUP/Spec.lean:102:0: 'MPUP.MPUP_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MPUP/Spec.lean:103:0: 'MPUP.TupleCoderN' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MPUP/Spec.lean:104:0: 'MPUP.Arch_coder_to_MPUP_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MPUP/Spec.lean:105:0: 'MPUP.Arch_MPUP_to_coder_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8556/8800] Built DiophCompression.BoxCounting (24s)
+info: DiophCompression/BoxCounting.lean:93:0: 'DiophCompression.box_counting_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8557/8800] Built DiophCompression.PeriodicProgressionCore (24s)
+info: DiophCompression/PeriodicProgressionCore.lean:54:0: 'DiophCompression.infinite_of_periodicProgression' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PeriodicProgressionCore.lean:55:0: 'DiophCompression.periodicProgression_or_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PeriodicProgressionCore.lean:56:0: 'DiophCompression.periodic_infinite_or_empty_of_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8558/8800] Built DiophCompression.Counting (24s)
+info: DiophCompression/Counting.lean:127:0: 'DiophCompression.card_degLE' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Counting.lean:128:0: 'DiophCompression.wCount_eq_choose' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8559/8800] Built DiophCompression.SkolemTupling (24s)
+info: DiophCompression/SkolemTupling.lean:157:0: 'DiophCompression.skolem_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SkolemTupling.lean:158:0: 'DiophCompression.eval_skolemPoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SkolemTupling.lean:159:0: 'DiophCompression.skolemPoly_totalDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SkolemTupling.lean:160:0: 'DiophCompression.exists_injective_poly_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8560/8800] Built DiophCompression.PellOrbitCore (24s)
+info: DiophCompression/PellOrbitCore.lean:185:0: 'DiophCompression.pellOrbit_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:186:0: 'DiophCompression.pellOrbit_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:187:0: 'DiophCompression.pellOrbit_strictMono_fst' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:188:0: 'DiophCompression.pellOrbit_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:189:0: 'DiophCompression.pellOrbit_unbounded_fst' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:190:0: 'DiophCompression.pellOrbit_output_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:191:0: 'DiophCompression.pellOrbit_output_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:192:0: 'DiophCompression.pellOrbit_output' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:193:0: 'DiophCompression.pellOrbit_neg_snd' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/PellOrbitCore.lean:194:0: 'DiophCompression.pellOrbit_strictMono_fst_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8561/8800] Built DiophCompression.SemanticQuadraticMatrix.AffineGcd (24s)
+warning: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:109:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:177:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:178:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_dvd_affineCoeff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:179:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_eq_zero_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:180:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_dvd_pairMinor' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:181:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_dvd_minorContent' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:182:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_pos_of_pairMinor_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:183:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:184:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_periodic_of_minorContent_ne_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:185:0: 'DiophCompression.SemanticQuadraticMatrix.all_pairMinors_zero_iff_rank_one_affine_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AffineGcd.lean:186:0: 'DiophCompression.SemanticQuadraticMatrix.affineGcd_of_rank_one_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8562/8800] Built ResearchUpgrade.LinearGrowthDimension (4.8s)
+warning: ResearchUpgrade/LinearGrowthDimension.lean:51:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ResearchUpgrade/LinearGrowthDimension.lean:52:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ResearchUpgrade/LinearGrowthDimension.lean:51:8: 'exact (Int.natCast_natAbs _).symm' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ResearchUpgrade/LinearGrowthDimension.lean:52:8: 'simp' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ResearchUpgrade/LinearGrowthDimension.lean:112:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8563/8800] Built ResearchUpgrade.LineToCosetUniform (5.8s)
+⚠ [8564/8800] Built ResearchUpgrade.ExistenceDirection (5.3s)
+warning: ResearchUpgrade/ExistenceDirection.lean:93:10: This simp argument is unused:
+  id
+
+Hint: Omit it from the simp argument list.
+  simp ̵[̵i̵d̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8565/8800] Built ResearchUpgrade.PadGraph (5.3s)
+warning: ResearchUpgrade/PadGraph.lean:106:37: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  simp [Finset.sum_ite_eq,̵ ̵F̵i̵n̵s̵e̵t̵.̵s̵u̵m̵_̵i̵t̵e̵_̵e̵q̵'̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8566/8800] Built ResearchUpgrade.RankControls (6.5s)
+✔ [8567/8800] Built ResearchUpgrade.WeakAffine (6.7s)
+✔ [8568/8800] Built ResearchUpgrade.PrimeCertificate (6.8s)
+✔ [8569/8800] Built ResearchUpgrade.RefutedResiduals (10s)
+⚠ [8570/8800] Built ResearchUpgrade.QuadRep (10s)
+warning: ResearchUpgrade/QuadRep.lean:32:8: automatically included section variable(s) unused in theorem `DiophCompression.ResearchUpgrade.IntQuad.eval_zero`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ResearchUpgrade/QuadRep.lean:36:0: automatically included section variable(s) unused in theorem `DiophCompression.ResearchUpgrade.IntQuad.eval_add`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ResearchUpgrade/QuadRep.lean:60:0: automatically included section variable(s) unused in theorem `DiophCompression.ResearchUpgrade.IntQuad.isQuadRep_const`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ResearchUpgrade/QuadRep.lean:121:0: automatically included section variable(s) unused in theorem `DiophCompression.ResearchUpgrade.IntQuad.finsupp_deg_le_two`:
+  [Fintype ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ResearchUpgrade/QuadRep.lean:144:19: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [hk0, F̵i̵n̵s̵u̵p̵p̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hk]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/QuadRep.lean:164:12: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [F̵i̵n̵s̵u̵p̵p̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hij, hbi1, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/QuadRep.lean:164:45: This simp argument is unused:
+  Ne.symm hij
+
+Hint: Omit it from the simp argument list.
+  simp [Finsupp.single_apply, hij, hbi1,̵ ̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵i̵j̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/QuadRep.lean:167:12: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [F̵i̵n̵s̵u̵p̵p̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hij, hbj1, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/QuadRep.lean:167:34: This simp argument is unused:
+  hij
+
+Hint: Omit it from the simp argument list.
+  simp [Finsupp.single_apply, hi̵j̵,̵ ̵h̵bj1, Ne.symm hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/QuadRep.lean:172:15: This simp argument is unused:
+  Finsupp.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [hk0, F̵i̵n̵s̵u̵p̵p̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hki, hkj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8571/8800] Built DiophCompression.WeakenUnknowns (9.4s)
+ℹ [8572/8800] Built DiophCompression.Definitions (9.9s)
+info: DiophCompression/Definitions.lean:83:0: 'DiophCompression.tupleCoderN_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Definitions.lean:84:0: 'DiophCompression.universalAchievableN_mono' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8573/8800] Built DiophCompression.StructuredFamilyCore (9.2s)
+info: DiophCompression/StructuredFamilyCore.lean:81:0: 'DiophCompression.infinite_of_structuredFamily' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8574/8800] Built DiophCompression.PolynomialMapCapacity (9.4s)
+info: DiophCompression/PolynomialMapCapacity.lean:91:0: 'DiophCompression.injective_polyMap_dimension_le_degreeSum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialMapCapacity.lean:92:0: 'DiophCompression.injective_polyMap_uniformDegree_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialMapCapacity.lean:93:0: 'DiophCompression.injective_poly_dimension_le_degree' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8575/8800] Built ResearchUpgrade.RadicalDrift (12s)
+warning: ResearchUpgrade/RadicalDrift.lean:155:70: This simp argument is unused:
+  he
+
+Hint: Omit it from the simp argument list.
+  simp only [D.zQuad_add, D.zLinEval_add, D.zQuad_smul, D.zLinEval_smul,
+  ̵  ̵ ̵ ̵D.zPolar_add_left,
+  ̲  ̲ ̲ ̲D.zPolar_smul_left, D.zPolar_smul_right, hrad, he̵,̵ ̵h̵Qe]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/RadicalDrift.lean:237:34: Variable name `h0` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8576/8800] Built ResearchUpgrade.CharacterSeparationReduction (4.8s)
+ℹ [8577/8800] Built MPUP.Task1 (11s)
+info: MPUP/Task1.lean:533:0: 'MPUP.coder_to_MPUP_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MPUP/Task1.lean:534:0: 'MPUP.MPUP_to_coder_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8578/8800] Built ResearchUpgrade.OneInputNoWitness (25s)
+✔ [8579/8800] Built SelectionS65.Arith (37s)
+⚠ [8580/8800] Built ResearchUpgrade.ReverseCompiler (7.6s)
+warning: ResearchUpgrade/ReverseCompiler.lean:31:0: automatically included section variable(s) unused in theorem `DiophCompression.ResearchUpgrade.IntQuad.eval_toMv`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ResearchUpgrade/ReverseCompiler.lean:42:0: automatically included section variable(s) unused in theorem `DiophCompression.ResearchUpgrade.IntQuad.totalDegree_toMv`:
+  [DecidableEq ι]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq ι] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+✔ [8581/8800] Built ResearchUpgrade.NonResidue (8.9s)
+✔ [8582/8800] Built DiophCompression.SemanticQuadraticMatrix.DefsMatrix (11s)
+ℹ [8583/8800] Built DiophCompression.LogicFragments (11s)
+info: DiophCompression/LogicFragments.lean:100:0: 'DiophCompression.withinPPZ_of_withinZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LogicFragments.lean:101:0: 'DiophCompression.systemRepresentsZ_empty' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8584/8800] Built DiophCompression.TreeCoding (12s)
+info: DiophCompression/TreeCoding.lean:268:0: 'DiophCompression.chain_graph_achievable_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/TreeCoding.lean:269:0: 'DiophCompression.chain_graph_achievable_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/TreeCoding.lean:270:0: 'DiophCompression.graph_achievable_tree_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8585/8800] Built DiophCompression.SemanticQuadratic.NormalForm (12s)
+info: DiophCompression/SemanticQuadratic/NormalForm.lean:141:0: 'DiophCompression.SemanticQuadratic.quadratic_normal_form' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/NormalForm.lean:142:0: 'DiophCompression.SemanticQuadratic.quadratic_normal_form_explicit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8586/8800] Built DiophCompression.SpecializationCapacity (12s)
+info: DiophCompression/SpecializationCapacity.lean:140:0: 'DiophCompression.specialization_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8587/8800] Built DiophCompression.ArityMonotonicity (12s)
+warning: DiophCompression/ArityMonotonicity.lean:28:22: Variable name `h` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DiophCompression/ArityMonotonicity.lean:61:26: Variable name `h` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: DiophCompression/ArityMonotonicity.lean:279:0: 'DiophCompression.pad_injective' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:280:0: 'DiophCompression.totalDegree_aeval_le_of_le_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:281:0: 'DiophCompression.eval_aeval_optSub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:282:0: 'DiophCompression.specialize_aeval_optSub' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:283:0: 'DiophCompression.specialization_arity_downward' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:284:0: 'DiophCompression.graph_arity_downward_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:285:0: 'DiophCompression.graph_arity_downward_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:286:0: 'DiophCompression.universal_arity_downward_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:287:0: 'DiophCompression.universal_arity_downward_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:288:0: 'DiophCompression.graphAchievableN_mono_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ArityMonotonicity.lean:289:0: 'DiophCompression.universalAchievableN_mono_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8588/8800] Built ResearchUpgrade.CosetShift (12s)
+warning: ResearchUpgrade/CosetShift.lean:187:9: Variable name `t` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8589/8800] Built ResearchUpgrade.LinearFibre (12s)
+warning: ResearchUpgrade/LinearFibre.lean:31:10: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [P̵i̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hb.symm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/LinearFibre.lean:59:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/LinearFibre.lean:56:19: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [outProj,̵ ̵P̵i̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵] at this
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/LinearFibre.lean:75:38: This simp argument is unused:
+  Pi.smul_apply
+
+Hint: Omit it from the simp argument list.
+  simp [outProj, hedef, Pi.add_apply, Pi.sm̵u̵l̵_̵a̵p̵p̵l̵y̵,̵ ̵P̵i.̵s̵i̵ngle_apply, hne, hne.symm] at hval
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/LinearFibre.lean:75:53: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [outProj, hedef, Pi.add_apply, Pi.smul_apply, P̵i̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hne, hne.symm] at hval
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/LinearFibre.lean:75:70: This simp argument is unused:
+  hne
+
+Hint: Omit it from the simp argument list.
+  simp [outProj, hedef, Pi.add_apply, Pi.smul_apply, Pi.single_apply, hne,̵ ̵h̵n̵e̵.symm] at hval
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8590/8800] Built ResearchUpgrade.RationalCentre (12s)
+⚠ [8591/8800] Built MPUP.Obstruction (12s)
+warning: MPUP/Obstruction.lean:49:46: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: MPUP/Obstruction.lean:210:12: Variable name `j` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MPUP/Obstruction.lean:408:23: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only ̵[̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]̵
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: MPUP/Obstruction.lean:442:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: MPUP/Obstruction.lean:481:0: 'MPUP.not_tupleCoderN' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MPUP/Obstruction.lean:482:0: 'MPUP.not_MPUP_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MPUP/Obstruction.lean:483:0: 'MPUP.not_MPUP_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8592/8800] Built DiophCompression.SemanticQuadraticMatrix.AdjugateIdentity (7.2s)
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:154:0: 'DiophCompression.SemanticQuadraticMatrix.witnessGram_transpose' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:155:0: 'DiophCompression.SemanticQuadraticMatrix.witnessGram_diag' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:156:0: 'DiophCompression.SemanticQuadraticMatrix.adjugate_witnessGram_transpose' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:157:0: 'DiophCompression.SemanticQuadraticMatrix.dotProduct_witnessGram_mulVec' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:158:0: 'DiophCompression.SemanticQuadraticMatrix.adjugate_pairing_comm' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:159:0: 'DiophCompression.SemanticQuadraticMatrix.witnessGram_mulVec_adjugate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:160:0: 'DiophCompression.SemanticQuadraticMatrix.det_smul_mem_gramRange' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:161:0: 'DiophCompression.SemanticQuadraticMatrix.adjugateQuad_add_smul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:162:0: 'DiophCompression.SemanticQuadraticMatrix.general_rank_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:163:0: 'DiophCompression.SemanticQuadraticMatrix.general_scaled_line_preserves_lattice' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:164:0: 'DiophCompression.SemanticQuadraticMatrix.general_scaled_line_identity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/AdjugateIdentity.lean:165:0: 'DiophCompression.SemanticQuadraticMatrix.general_scaled_line_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8593/8800] Built ResearchUpgrade.PolarAnnihilator (6.9s)
+ℹ [8594/8800] Built DiophCompression.Sandwich (6.6s)
+info: DiophCompression/Sandwich.lean:115:0: 'DiophCompression.universal_implies_graph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Sandwich.lean:116:0: 'DiophCompression.graph_implies_specialization' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Sandwich.lean:117:0: 'DiophCompression.graph_implies_specialization_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Sandwich.lean:118:0: 'DiophCompression.universality_graph_specialization_sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Sandwich.lean:119:0: 'DiophCompression.universality_graph_specialization_sandwich_Z' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8595/8800] Built DiophCompression.BoundaryCases (7.4s)
+info: DiophCompression/BoundaryCases.lean:257:0: 'DiophCompression.nat_root_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCases.lean:258:0: 'DiophCompression.graph_no_witness_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCases.lean:259:0: 'DiophCompression.graph_no_witness_achievable' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCases.lean:260:0: 'DiophCompression.graph_no_witness_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8596/8800] Built ResearchUpgrade.DefiniteBranch (22s)
+warning: ResearchUpgrade/DefiniteBranch.lean:47:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/DefiniteBranch.lean:246:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ResearchUpgrade/DefiniteBranch.lean:247:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: ResearchUpgrade/DefiniteBranch.lean:246:6: 'exact Int.natCast_natAbs _' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ResearchUpgrade/DefiniteBranch.lean:247:6: 'simp' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [8597/8800] Built ResearchUpgrade.OutputCoercivity (6.1s)
+ℹ [8598/8800] Built DiophCompression.WeightedMPUP (6.1s)
+info: DiophCompression/WeightedMPUP.lean:102:0: 'DiophCompression.graph_dimension_le_totalDegreeCapacity_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:103:0: 'DiophCompression.graph_dimension_le_totalDegreeCapacity_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:104:0: 'DiophCompression.quantitative_MPUP_N_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:105:0: 'DiophCompression.quantitative_MPUP_Z_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:106:0: 'DiophCompression.not_MPUP_N_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:107:0: 'DiophCompression.not_MPUP_Z_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:108:0: 'DiophCompression.graph_degree_one_le_one_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:109:0: 'DiophCompression.graph_degree_one_achievable_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/WeightedMPUP.lean:110:0: 'DiophCompression.not_multiUniversalN_degree_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8599/8800] Built DiophCompression.BoundaryCasesZ (5.5s)
+info: DiophCompression/BoundaryCasesZ.lean:81:0: 'DiophCompression.representsN_iff_representsZ_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:82:0: 'DiophCompression.withinN_zero_iff_withinZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:83:0: 'DiophCompression.graphAchievableN_zero_iff_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:84:0: 'DiophCompression.graph_degree_one_achievable_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:85:0: 'DiophCompression.graph_degree_one_exact_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:86:0: 'DiophCompression.graph_degree_one_exact_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:87:0: 'DiophCompression.graph_no_witness_le_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:88:0: 'DiophCompression.graph_no_witness_achievable_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BoundaryCasesZ.lean:89:0: 'DiophCompression.graph_no_witness_exact_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8600/8800] Built ResearchUpgrade.AffineCentre (7.1s)
+ℹ [8601/8800] Built DiophCompression.CapacityFunctions (6.1s)
+info: DiophCompression/CapacityFunctions.lean:190:0: 'DiophCompression.graphCapacityN_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:191:0: 'DiophCompression.graphCapacityZ_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:192:0: 'DiophCompression.graphCapacityN_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:193:0: 'DiophCompression.graphCapacityZ_upper' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:194:0: 'DiophCompression.graphCapacityN_degree_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:195:0: 'DiophCompression.graphCapacityZ_degree_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:196:0: 'DiophCompression.graphCapacityN_noWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:197:0: 'DiophCompression.graphCapacityZ_noWitness' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:198:0: 'DiophCompression.universalCapacityN_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:199:0: 'DiophCompression.universalCapacityZ_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CapacityFunctions.lean:200:0: 'DiophCompression.universalCapacityN_le_graphCapacityN_succ' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8602/8800] Built DiophCompression.SemanticQuadraticGeneral.Defs (5.9s)
+✔ [8603/8800] Built DiophCompression.SemanticQuadratic.FiberDefs (5.0s)
+ℹ [8604/8800] Built DiophCompression.DegreeZero (6.3s)
+info: DiophCompression/DegreeZero.lean:85:0: 'DiophCompression.graph_degree_zero_impossible_N' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/DegreeZero.lean:86:0: 'DiophCompression.graph_degree_zero_impossible_Z' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/DegreeZero.lean:87:0: 'DiophCompression.graphCapacityN_degree_zero_not_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/DegreeZero.lean:88:0: 'DiophCompression.graphCapacityZ_degree_zero_not_attained' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/DegreeZero.lean:89:0: 'DiophCompression.universalAchievableN_degree_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/DegreeZero.lean:90:0: 'DiophCompression.universalAchievableZ_degree_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/DegreeZero.lean:91:0: 'DiophCompression.universalCapacityN_degree_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/DegreeZero.lean:92:0: 'DiophCompression.universalCapacityZ_degree_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8605/8800] Built ResearchUpgrade.OutputGrowth (13s)
+warning: ResearchUpgrade/OutputGrowth.lean:299:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+✔ [8606/8800] Built DiophCompression.SemanticQuadraticTwoWitness.Defs2W (10s)
+ℹ [8607/8800] Built DiophCompression.SemanticQuadraticGeneral.NormalForm (10s)
+info: DiophCompression/SemanticQuadraticGeneral/NormalForm.lean:202:0: 'DiophCompression.SemanticQuadraticGeneral.normal_form_general_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/NormalForm.lean:203:0: 'DiophCompression.SemanticQuadraticGeneral.normal_form_general_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/NormalForm.lean:204:0: 'DiophCompression.SemanticQuadraticGeneral.quadratic_normal_form_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8608/8800] Built DiophCompression.SemanticQuadratic.PellPow (11s)
+info: DiophCompression/SemanticQuadratic/PellPow.lean:69:0: 'DiophCompression.SemanticQuadratic.pellPow_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/PellPow.lean:70:0: 'DiophCompression.SemanticQuadratic.pellPow_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8609/8800] Built ResearchUpgrade.RadicalBridge (9.7s)
+ℹ [8610/8800] Built DiophCompression.SemanticQuadratic.Class_D3 (12s)
+info: DiophCompression/SemanticQuadratic/Class_D3.lean:98:0: 'DiophCompression.SemanticQuadratic.dichotomy_degenerate_C_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8611/8800] Built DiophCompression.SemanticQuadratic.Class_D1 (15s)
+info: DiophCompression/SemanticQuadratic/Class_D1.lean:56:0: 'DiophCompression.SemanticQuadratic.dichotomy_definite' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8612/8800] Built DiophCompression.SemanticQuadratic.Class_D2 (15s)
+info: DiophCompression/SemanticQuadratic/Class_D2.lean:189:0: 'DiophCompression.SemanticQuadratic.dichotomy_degenerate_C_ne' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8613/8800] Built DiophCompression.SemanticQuadratic.Class_D9 (16s)
+info: DiophCompression/SemanticQuadratic/Class_D9.lean:155:0: 'DiophCompression.SemanticQuadratic.graph_one_witness_degree_two_le_two_of_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8614/8800] Built DiophCompression.SemanticQuadraticTwoWitness.DefsScaled (7.2s)
+✔ [8615/8800] Built ResearchUpgrade.WitnessInvariance (8.0s)
+✔ [8616/8800] Built ResearchUpgrade.SaturatedExtension (8.7s)
+⚠ [8617/8800] Built DiophCompression.SemanticQuadratic.QuadraticFamilyData (6.7s)
+warning: DiophCompression/SemanticQuadratic/QuadraticFamilyData.lean:44:26: Variable name `A` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DiophCompression/SemanticQuadratic/QuadraticFamilyData.lean:44:36: Variable name `q` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: DiophCompression/SemanticQuadratic/QuadraticFamilyData.lean:55:0: 'DiophCompression.SemanticQuadratic.d2_quadratic_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/QuadraticFamilyData.lean:56:0: 'DiophCompression.SemanticQuadratic.d2_leading_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/QuadraticFamilyData.lean:57:0: 'DiophCompression.SemanticQuadratic.d2_family_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8618/8800] Built DiophCompression.SemanticQuadratic.Class_D6 (24s)
+info: DiophCompression/SemanticQuadratic/Class_D6.lean:113:0: 'DiophCompression.SemanticQuadratic.dichotomy_square_C_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8619/8800] Built DiophCompression.SemanticQuadraticTwoWitness.SignNormalisation (7.1s)
+info: DiophCompression/SemanticQuadraticTwoWitness/SignNormalisation.lean:55:0: 'DiophCompression.SemanticQuadraticTwoWitness.fiberSet2_neg' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/SignNormalisation.lean:56:0: 'DiophCompression.SemanticQuadraticTwoWitness.schur_neg' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/SignNormalisation.lean:57:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_neg_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/SignNormalisation.lean:58:0: 'DiophCompression.SemanticQuadraticTwoWitness.orientedSchur_neg' depends on axioms: [propext, Quot.sound]
+ℹ [8620/8800] Built DiophCompression.SemanticQuadratic.Class_D4 (24s)
+info: DiophCompression/SemanticQuadratic/Class_D4.lean:179:0: 'DiophCompression.SemanticQuadratic.dichotomy_square_C_ne' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8621/8800] Built DiophCompression.SemanticQuadraticTwoWitness.ScaledLine (7.6s)
+info: DiophCompression/SemanticQuadraticTwoWitness/ScaledLine.lean:80:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_two_identity' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/ScaledLine.lean:81:0: 'DiophCompression.SemanticQuadraticTwoWitness.scaled_line_identity' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/ScaledLine.lean:82:0: 'DiophCompression.SemanticQuadraticTwoWitness.scaled_line_preserves_coset' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/ScaledLine.lean:83:0: 'DiophCompression.SemanticQuadraticTwoWitness.scaled_line_discriminant' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/ScaledLine.lean:84:0: 'DiophCompression.SemanticQuadraticTwoWitness.scaled_line_X_at_origin' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/ScaledLine.lean:85:0: 'DiophCompression.SemanticQuadraticTwoWitness.scaled_line_solution' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8622/8800] Built DiophCompression.SemanticQuadratic.Class_D7 (19s)
+info: DiophCompression/SemanticQuadratic/Class_D7.lean:168:0: 'DiophCompression.SemanticQuadratic.dichotomy_pell' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8623/8800] Built DiophCompression.SemanticQuadraticTwoWitness.Directions (15s)
+info: DiophCompression/SemanticQuadraticTwoWitness/Directions.lean:254:0: 'DiophCompression.SemanticQuadraticTwoWitness.definite_nonsquare_direction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Directions.lean:255:0: 'DiophCompression.SemanticQuadraticTwoWitness.anisotropic_signed_nonsquare_direction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Directions.lean:256:0: 'DiophCompression.SemanticQuadraticTwoWitness.split_signed_nonsquare_direction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8624/8800] Built DiophCompression.SemanticQuadraticTwoWitness.Bounds2W (9.2s)
+info: DiophCompression/SemanticQuadraticTwoWitness/Bounds2W.lean:124:0: 'DiophCompression.SemanticQuadraticTwoWitness.betaR_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Bounds2W.lean:125:0: 'DiophCompression.SemanticQuadraticTwoWitness.gammaR_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Bounds2W.lean:126:0: 'DiophCompression.SemanticQuadraticTwoWitness.fiberSet2_infinite_of_unbounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8625/8800] Built DiophCompression.SemanticQuadratic.FiberDichotomy (6.8s)
+info: DiophCompression/SemanticQuadratic/FiberDichotomy.lean:50:0: 'DiophCompression.SemanticQuadratic.fiber_dichotomy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/FiberDichotomy.lean:51:0: 'DiophCompression.SemanticQuadratic.graph_one_witness_degree_two_le_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/FiberDichotomy.lean:52:0: 'DiophCompression.SemanticQuadratic.graphCapacityZ_one_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/FiberDichotomy.lean:53:0: 'DiophCompression.SemanticQuadratic.not_graphAchievableZ_three_one_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8626/8800] Built DiophCompression.SemanticQuadratic.PellFiberOrbit (6.0s)
+info: DiophCompression/SemanticQuadratic/PellFiberOrbit.lean:74:0: 'DiophCompression.SemanticQuadratic.pell_fiber_orbit_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8627/8800] Built DiophCompression.SemanticQuadraticTwoWitness.PellStep (12s)
+info: DiophCompression/SemanticQuadraticTwoWitness/PellStep.lean:130:0: 'DiophCompression.SemanticQuadratic.pell_infinite_of_X_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8628/8800] Built DiophCompression.SemanticQuadratic.LeafDataD3D6 (20s)
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:411:0: 'DiophCompression.SemanticQuadratic.linearFamily_nonempty' depends on axioms: [propext]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:412:0: 'DiophCompression.SemanticQuadratic.fiberSet_infinite_of_linearFamily' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:413:0: 'DiophCompression.SemanticQuadratic.dichotomy_of_dichotomyLinearData' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:414:0: 'DiophCompression.SemanticQuadratic.dichotomy_degenerate_C_zero_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:415:0: 'DiophCompression.SemanticQuadratic.dichotomy_square_C_zero_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:416:0: 'DiophCompression.SemanticQuadratic.dichotomy_square_C_ne_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:417:0: 'DiophCompression.SemanticQuadratic.dichotomy_degenerate_C_zero_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:418:0: 'DiophCompression.SemanticQuadratic.dichotomy_square_C_zero_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/LeafDataD3D6.lean:419:0: 'DiophCompression.SemanticQuadratic.dichotomy_square_C_ne_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8629/8800] Built DiophCompression.SemanticQuadraticGeneral.ProjectionDichotomy (9.1s)
+info: DiophCompression/SemanticQuadraticGeneral/ProjectionDichotomy.lean:233:0: 'DiophCompression.SemanticQuadraticGeneral.capacity_two_aux' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/ProjectionDichotomy.lean:234:0: 'DiophCompression.SemanticQuadraticGeneral.quadraticProjectionDichotomy_implies_capacity_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/ProjectionDichotomy.lean:235:0: 'DiophCompression.SemanticQuadraticGeneral.graphCapacityZ_two_of_projectionDichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/ProjectionDichotomy.lean:236:0: 'DiophCompression.SemanticQuadraticGeneral.quadraticWitnessInertiaZ_of_projectionDichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/ProjectionDichotomy.lean:237:0: 'DiophCompression.SemanticQuadraticGeneral.eval_binary_homogeneous_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/ProjectionDichotomy.lean:238:0: 'DiophCompression.SemanticQuadraticGeneral.quadraticProjectionDichotomyZ_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8630/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankTwoGeneric (8.3s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankTwoGeneric.lean:136:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_two_dichotomy_of_line_direction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8631/8800] Built DiophCompression.SemanticQuadratic.OneWitnessFamilyData (6.3s)
+info: DiophCompression/SemanticQuadratic/OneWitnessFamilyData.lean:78:0: 'DiophCompression.SemanticQuadratic.fiberSet_infinite_of_oneWitnessFamilyData' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/OneWitnessFamilyData.lean:79:0: 'DiophCompression.SemanticQuadratic.OneWitnessFamilyData.toStructuredFamily' depends on axioms: [propext]
+ℹ [8632/8800] Built DiophCompression.SemanticQuadraticTwoWitness.Bridge2W (8.6s)
+info: DiophCompression/SemanticQuadraticTwoWitness/Bridge2W.lean:166:0: 'DiophCompression.SemanticQuadraticTwoWitness.eval_ternary_homogeneous_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Bridge2W.lean:167:0: 'DiophCompression.SemanticQuadraticTwoWitness.quadraticProjectionDichotomyZ_two_of_explicit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Bridge2W.lean:168:0: 'DiophCompression.SemanticQuadraticTwoWitness.periodic_infinite_or_empty' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8633/8800] Built DiophCompression.SemanticQuadratic.PellOrbitOfXPos (12s)
+warning: DiophCompression/SemanticQuadratic/PellOrbitOfXPos.lean:52:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DiophCompression/SemanticQuadratic/PellOrbitOfXPos.lean:72:20: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: DiophCompression/SemanticQuadratic/PellOrbitOfXPos.lean:116:0: 'DiophCompression.SemanticQuadratic.pell_orbit_of_X_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8634/8800] Built DiophCompression.SemanticQuadratic.FiberDichotomyData (10s)
+info: DiophCompression/SemanticQuadratic/FiberDichotomyData.lean:117:0: 'DiophCompression.SemanticQuadratic.dichotomy_of_dichotomyOneWitnessData' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/FiberDichotomyData.lean:118:0: 'DiophCompression.SemanticQuadratic.dichotomyOneWitnessData_of_linear' depends on axioms: [propext]
+info: DiophCompression/SemanticQuadratic/FiberDichotomyData.lean:119:0: 'DiophCompression.SemanticQuadratic.dichotomy_definite_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/FiberDichotomyData.lean:120:0: 'DiophCompression.SemanticQuadratic.fiber_dichotomy_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadratic/FiberDichotomyData.lean:121:0: 'DiophCompression.SemanticQuadratic.fiber_dichotomy_of_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8635/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankOneNormalForm (8.6s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalForm.lean:79:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_normal_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8636/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankOneCoupled (9.0s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneCoupled.lean:234:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_coupled_discriminant_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneCoupled.lean:235:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_coupled_discriminant_nonzero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneCoupled.lean:236:0: 'DiophCompression.SemanticQuadraticTwoWitness.square_mod_prime_of_one_mod_eight_abs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneCoupled.lean:237:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_coupled_prime_step' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8637/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankTwoAlphaZero (13s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankTwoAlphaZero.lean:147:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_two_alpha_zero_periodic_or_progression' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8638/8800] Built DiophCompression.SemanticQuadratic.PellDichotomyData (7.6s)
+warning: DiophCompression/SemanticQuadratic/PellDichotomyData.lean:48:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: DiophCompression/SemanticQuadratic/PellDichotomyData.lean:88:0: 'DiophCompression.SemanticQuadratic.dichotomy_pell_data' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8639/8800] Built DiophCompression.SemanticQuadraticMatrix.FullRankGeneric (14s)
+warning: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:425:5: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:596:10: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  simp [P̵i̵.̵s̵i̵n̵g̵l̵e̵_̵a̵p̵p̵l̵y̵,̵ ̵hij, Ne.symm hij] at hi hj
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:716:0: 'DiophCompression.SemanticQuadraticMatrix.kBetaM_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:717:0: 'DiophCompression.SemanticQuadraticMatrix.kGammaM_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:718:0: 'DiophCompression.SemanticQuadraticMatrix.abs_dotProduct_mulVec_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:719:0: 'DiophCompression.SemanticQuadraticMatrix.betaMatrix_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:720:0: 'DiophCompression.SemanticQuadraticMatrix.gammaMatrix_abs_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:721:0: 'DiophCompression.SemanticQuadraticMatrix.fboundM_core_ge_lin' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:722:0: 'DiophCompression.SemanticQuadraticMatrix.fboundM_core_ge_gamma' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:723:0: 'DiophCompression.SemanticQuadraticMatrix.fiberSetM_infinite_of_unbounded' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:724:0: 'DiophCompression.SemanticQuadraticMatrix.general_scaled_line_fq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:725:0: 'DiophCompression.SemanticQuadraticMatrix.fiberSetM_infinite_of_line' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:726:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_dichotomy_of_direction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:727:0: 'DiophCompression.SemanticQuadraticMatrix.alpha_zero_beta_zero_periodic_M' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:728:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_alpha_zero_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:729:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_root_bound' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:730:0: 'DiophCompression.SemanticQuadraticMatrix.adjugateQuad_smul_add_smul' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:731:0: 'DiophCompression.SemanticQuadraticMatrix.indefinite_signed_nonsquare_direction_M' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:732:0: 'DiophCompression.SemanticQuadraticMatrix.eq_zero_of_adjugateQuad_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:733:0: 'DiophCompression.SemanticQuadraticMatrix.exists_adjugateQuad_sign' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:734:0: 'DiophCompression.SemanticQuadraticMatrix.definite_signed_nonsquare_direction_M' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:735:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_dichotomy_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankGeneric.lean:736:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_projection_dichotomy_of_direction_property' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8640/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankOneCoupledData (8.2s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneCoupledData.lean:163:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_coupled_prime_step_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8641/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankZero (21s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankZero.lean:217:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_rank_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8642/8800] Built DiophCompression.SemanticQuadraticSingular.DefsSingularGeneral (6.9s)
+ℹ [8643/8800] Built DiophCompression.SemanticQuadraticMatrix.QuadraticFamilyA2 (6.0s)
+info: DiophCompression/SemanticQuadraticMatrix/QuadraticFamilyA2.lean:66:0: 'DiophCompression.SemanticQuadraticMatrix.a2_quadratic_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/QuadraticFamilyA2.lean:67:0: 'DiophCompression.SemanticQuadraticMatrix.a2_leading_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/QuadraticFamilyA2.lean:68:0: 'DiophCompression.SemanticQuadraticMatrix.a2_leading_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/QuadraticFamilyA2.lean:69:0: 'DiophCompression.SemanticQuadraticMatrix.a2_family_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8644/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankTwoLeaves (10s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankTwoLeaves.lean:233:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_definite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankTwoLeaves.lean:234:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_split' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankTwoLeaves.lean:235:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_anisotropic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8645/8800] Built DiophCompression.SemanticQuadratic.DegenerateDichotomyData (10s)
+info: DiophCompression/SemanticQuadratic/DegenerateDichotomyData.lean:158:0: 'DiophCompression.SemanticQuadratic.dichotomy_degenerate_C_ne_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/DegenerateDichotomyData.lean:159:0: 'DiophCompression.SemanticQuadratic.fiber_dichotomy_data_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadratic/DegenerateDichotomyData.lean:160:0: 'DiophCompression.SemanticQuadratic.fiber_dichotomy_of_data_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8646/8800] Built ResearchUpgrade.AllGoodPrimeRankOne (9.1s)
+⚠ [8647/8800] Built DiophCompression.SemanticQuadraticSingular.RadicalAffine (6.7s)
+warning: DiophCompression/SemanticQuadraticSingular/RadicalAffine.lean:87:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: DiophCompression/SemanticQuadraticSingular/RadicalAffine.lean:128:0: 'DiophCompression.SemanticQuadraticSingular.exists_sum_eq_finset_gcd' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalAffine.lean:129:0: 'DiophCompression.SemanticQuadraticSingular.affine_family_nonzero_minor_periodic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalAffine.lean:130:0: 'DiophCompression.SemanticQuadraticSingular.affine_family_zero_minors_proportional' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalAffine.lean:131:0: 'DiophCompression.SemanticQuadraticSingular.primitive_affine_direction' does not depend on any axioms
+info: DiophCompression/SemanticQuadraticSingular/RadicalAffine.lean:132:0: 'DiophCompression.SemanticQuadraticSingular.radical_family_reduces_to_one_coupled_variable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8648/8800] Built DiophCompression.SemanticQuadraticThreeWitness.Bridge3W (13s)
+warning: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:166:17: This simp argument is unused:
+  e0
+
+Hint: Omit it from the simp argument list.
+  simp only [e0̵,̵ ̵e̵1, e2, e3, l1, l2, l3, Matrix.vecHead, Matrix.vecTail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:166:33: This simp argument is unused:
+  l1
+
+Hint: Omit it from the simp argument list.
+  simp only [e0, e1, e2, e3, l1̵,̵ ̵l̵2, l3, Matrix.vecHead, Matrix.vecTail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:166:37: This simp argument is unused:
+  l2
+
+Hint: Omit it from the simp argument list.
+  simp only [e0, e1, e2, e3, l1, l2̵,̵ ̵l̵3, Matrix.vecHead, Matrix.vecTail]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:166:61: This simp argument is unused:
+  Matrix.vecTail
+
+Hint: Omit it from the simp argument list.
+  simp only [e0, e1, e2, e3, l1, l2, l3, Matrix.vecHead,̵ ̵M̵a̵t̵r̵i̵x̵.̵v̵e̵c̵T̵a̵i̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:199:0: 'DiophCompression.SemanticQuadraticThreeWitness.eval_quaternary_homogeneous_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:200:0: 'DiophCompression.SemanticQuadraticThreeWitness.fiberVal_eq_fqM' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:201:0: 'DiophCompression.SemanticQuadraticThreeWitness.fiberSetG_eq_fiberSetM' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:202:0: 'DiophCompression.SemanticQuadraticThreeWitness.fboundG_eq_fboundM' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:203:0: 'DiophCompression.SemanticQuadraticThreeWitness.dichotomy3_full_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:204:0: 'DiophCompression.SemanticQuadraticThreeWitness.dichotomy3_full_rank_explicit' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticThreeWitness/Bridge3W.lean:205:0: 'DiophCompression.SemanticQuadraticThreeWitness.quadraticProjectionDichotomyZ_three_full_rank' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8649/8800] Built DiophCompression.SemanticQuadraticSingular.RadicalDecomposition (8.8s)
+info: DiophCompression/SemanticQuadraticSingular/RadicalDecomposition.lean:385:0: 'DiophCompression.SemanticQuadraticSingular.integer_kernel_is_saturated' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalDecomposition.lean:386:0: 'DiophCompression.SemanticQuadraticSingular.kernel_has_integral_basis' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalDecomposition.lean:387:0: 'DiophCompression.SemanticQuadraticSingular.saturated_submodule_has_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalDecomposition.lean:388:0: 'DiophCompression.SemanticQuadraticSingular.singular_symmetric_congruent_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalDecomposition.lean:389:0: 'DiophCompression.SemanticQuadraticSingular.nondegenerate_quotient_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/RadicalDecomposition.lean:390:0: 'DiophCompression.SemanticQuadraticSingular.affine_direction_unimodular_completion' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8650/8800] Built DiophCompression.SemanticQuadraticMatrix.BridgeGeneral (10s)
+warning: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:104:8: `Finsupp.support_single_ne_zero` has been deprecated: Use `Finsupp.support_single` instead
+warning: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:105:8: `Finsupp.support_single_ne_zero` has been deprecated: Use `Finsupp.support_single` instead
+warning: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:107:8: `Finsupp.support_single_ne_zero` has been deprecated: Use `Finsupp.support_single` instead
+warning: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:108:8: `Finsupp.support_single_ne_zero` has been deprecated: Use `Finsupp.support_single` instead
+warning: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:197:10: `Finsupp.support_single_ne_zero` has been deprecated: Use `Finsupp.support_single` instead
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:357:0: 'DiophCompression.SemanticQuadraticMatrix.homogeneous_degree_two_support_classification' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:358:0: 'DiophCompression.SemanticQuadraticMatrix.homogeneous_degree_two_eval_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:359:0: 'DiophCompression.SemanticQuadraticMatrix.fiberSetG_eq_fiberSetM_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:360:0: 'DiophCompression.SemanticQuadraticMatrix.fboundG_eq_fboundM_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:361:0: 'DiophCompression.SemanticQuadraticMatrix.dichotomyG_of_dichotomyM_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:362:0: 'DiophCompression.SemanticQuadraticMatrix.aOfGeneral_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:363:0: 'DiophCompression.SemanticQuadraticMatrix.bVectorOfGeneral_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/BridgeGeneral.lean:364:0: 'DiophCompression.SemanticQuadraticMatrix.witnessMatrixOfGeneral_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8651/8800] Built DiophCompression.SemanticQuadraticSingular.QuotientRankZero (23s)
+warning: DiophCompression/SemanticQuadraticSingular/QuotientRankZero.lean:43:64: Variable name `hb` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+info: DiophCompression/SemanticQuadraticSingular/QuotientRankZero.lean:590:0: 'DiophCompression.SemanticQuadraticSingular.linear_modulus_divides_quadratic_remainder' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/QuotientRankZero.lean:591:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_zero_bounded_or_infinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/QuotientRankZero.lean:592:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_zero_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/QuotientRankZero.lean:593:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_zero_dichotomy_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8652/8800] Built DiophCompression.SemanticQuadraticTwoWitness.Unimodular (57s)
+info: DiophCompression/SemanticQuadraticTwoWitness/Unimodular.lean:105:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_of_unimodular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8653/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankOne (6.3s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOne.lean:143:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_rank_one_normal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOne.lean:144:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_rank_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8654/8800] Built DiophCompression.SemanticQuadraticTwoWitness.Assembly2W (5.8s)
+info: DiophCompression/SemanticQuadraticTwoWitness/Assembly2W.lean:40:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Assembly2W.lean:41:0: 'DiophCompression.SemanticQuadraticTwoWitness.quadraticProjectionDichotomyZ_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Assembly2W.lean:42:0: 'DiophCompression.SemanticQuadraticTwoWitness.graph_two_witness_degree_two_le_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Assembly2W.lean:43:0: 'DiophCompression.SemanticQuadraticTwoWitness.graphCapacityZ_two_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/Assembly2W.lean:44:0: 'DiophCompression.SemanticQuadraticTwoWitness.not_graphAchievableZ_three_two_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8655/8800] Built DiophCompression.PeriodicProgressionData (5.8s)
+info: DiophCompression/PeriodicProgressionData.lean:72:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_uncoupled_periodic_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/PeriodicProgressionData.lean:73:0: 'DiophCompression.SemanticQuadraticMatrix.alpha_zero_beta_zero_periodic_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8656/8800] Built DiophCompression.SemanticQuadraticSingular.DefsSingular (5.9s)
+ℹ [8657/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankOneUncoupledData (5.0s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneUncoupledData.lean:66:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_of_dichotomy2Data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneUncoupledData.lean:67:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_uncoupled_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneUncoupledData.lean:68:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_uncoupled_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8658/8800] Built DiophCompression.SemanticQuadraticTwoWitness.RankOneNormalData (7.2s)
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalData.lean:181:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2Data_of_unimodular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalData.lean:182:0: 'DiophCompression.SemanticQuadraticTwoWitness.b1c_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalData.lean:183:0: 'DiophCompression.SemanticQuadraticTwoWitness.rank_one_coupled_pos_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalData.lean:184:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_rank_one_normal_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalData.lean:185:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_rank_one_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalData.lean:186:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_rank_one_normal_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticTwoWitness/RankOneNormalData.lean:187:0: 'DiophCompression.SemanticQuadraticTwoWitness.dichotomy2_rank_one_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8659/8800] Built DiophCompression.SemanticQuadraticSingular.FiniteFieldQuadratic (7.5s)
+info: DiophCompression/SemanticQuadraticSingular/FiniteFieldQuadratic.lean:116:0: 'DiophCompression.SemanticQuadraticSingular.exists_weighted_sq_add_sq' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/FiniteFieldQuadratic.lean:117:0: 'DiophCompression.SemanticQuadraticSingular.nondegenerate_binary_quad_universal_zmod' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/FiniteFieldQuadratic.lean:118:0: 'DiophCompression.SemanticQuadraticSingular.nondegenerate_affine_binary_quad_has_root' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/FiniteFieldQuadratic.lean:119:0: 'DiophCompression.SemanticQuadraticSingular.moving_remainder_root_mod_prime' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8660/8800] Built DiophCompression.SemanticQuadraticSingular.QuotientRankOne (6.3s)
+warning: DiophCompression/SemanticQuadraticSingular/QuotientRankOne.lean:81:20: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  simp [fboundSG,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DiophCompression/SemanticQuadraticSingular/QuotientRankOne.lean:147:20: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  simp [fboundSG,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: DiophCompression/SemanticQuadraticSingular/QuotientRankOne.lean:160:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_one_normal_form' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/QuotientRankOne.lean:161:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_one_coupled_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/QuotientRankOne.lean:162:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_one_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8661/8800] Built DiophCompression.SemanticQuadraticSingular.FiniteFieldQuadraticGeneral (6.9s)
+info: DiophCompression/SemanticQuadraticSingular/FiniteFieldQuadraticGeneral.lean:205:0: 'DiophCompression.SemanticQuadraticSingular.nondegenerate_quadratic_represents_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/FiniteFieldQuadraticGeneral.lean:206:0: 'DiophCompression.SemanticQuadraticSingular.nondegenerate_affine_quadratic_has_root_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8662/8800] Built DiophCompression.SemanticQuadraticMatrix.FullRankAssemblyData (65s)
+warning: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:117:5: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:166:2: 'skip' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:307:6: 'skip' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:464:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:483:6: 'skip' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+info: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:498:0: 'DiophCompression.SemanticQuadraticMatrix.fiberSetM_line_family' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:499:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_dichotomy_of_direction_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:500:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_dichotomy_all_data_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticMatrix/FullRankAssemblyData.lean:501:0: 'DiophCompression.SemanticQuadraticMatrix.full_rank_dichotomy_all_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8663/8800] Built DiophCompression.SemanticQuadraticSingular.MovingModulusGeneral (7.3s)
+warning: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:691:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:778:0: 'DiophCompression.SemanticQuadraticSingular.moving_remainder_identity_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:779:0: 'DiophCompression.SemanticQuadraticSingular.moving_remainder_root_mod_prime_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:780:0: 'DiophCompression.SemanticQuadraticSingular.moving_modulus_prime_step_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:781:0: 'DiophCompression.SemanticQuadraticSingular.moving_modulus_prime_step_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:782:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_ge_two_moving_dichotomy' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:784:0: 'DiophCompression.SemanticQuadraticSingular.movingModulus_negSlope_witnessEquiv' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:785:0: 'DiophCompression.SemanticQuadraticSingular.fiberSetSG_negSlope' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:786:0: 'DiophCompression.SemanticQuadraticSingular.movingModulus_negSlope_dvd_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:787:0: 'DiophCompression.SemanticQuadraticSingular.movingModulus_negSlope_strictMono_transfer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:788:0: 'DiophCompression.SemanticQuadraticSingular.dichotomySG_zero_periodic_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:789:0: 'DiophCompression.SemanticQuadraticSingular.quotient_rank_ge_two_moving_dichotomy_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:790:0: 'DiophCompression.SemanticQuadraticSingular.sg_pos_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:791:0: 'DiophCompression.SemanticQuadraticSingular.dichotomySG_pos_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:792:0: 'DiophCompression.SemanticQuadraticSingular.aux_dichotomySG_neg_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/MovingModulusGeneral.lean:793:0: 'DiophCompression.SemanticQuadraticSingular.dichotomySG_zero_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8664/8800] Built ResearchUpgrade.AllGoodPrimeRankTwo (6.2s)
+warning: ResearchUpgrade/AllGoodPrimeRankTwo.lean:87:38: Variable name `hD` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8665/8800] Built DiophCompression.SemanticQuadraticSingular.SingularAssembly (10s)
+warning: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:474:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:797:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:855:0: 'DiophCompression.SemanticQuadraticSingular.fqM_congruence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:856:0: 'DiophCompression.SemanticQuadraticSingular.witnessQuad_drop_of_gram_block' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:857:0: 'DiophCompression.SemanticQuadraticSingular.dichotomyM_of_unimodular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:858:0: 'DiophCompression.SemanticQuadraticSingular.quadraticProjectionDichotomyZ_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:859:0: 'DiophCompression.SemanticQuadraticSingular.singular_projection_dichotomy_all_r' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:860:0: 'DiophCompression.SemanticQuadraticSingular.quadraticProjectionDichotomyZ_all' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:861:0: 'DiophCompression.SemanticQuadraticSingular.quadraticWitnessInertiaZ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:862:0: 'DiophCompression.SemanticQuadraticSingular.graphAchievableZ_degree_two_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:863:0: 'DiophCompression.SemanticQuadraticSingular.dichotomyMData_of_unimodular' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:864:0: 'DiophCompression.SemanticQuadraticSingular.singular_projection_dichotomy_all_r_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticSingular/SingularAssembly.lean:865:0: 'DiophCompression.SemanticQuadraticSingular.singular_projection_dichotomy_all_r_data_full' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+⚠ [8666/8800] Built ResearchUpgrade.PrimeRay (5.3s)
+warning: ResearchUpgrade/PrimeRay.lean:156:26: `Finset.filter_card_add_filter_neg_card_eq_card` has been deprecated: Use `Finset.card_filter_add_card_filter_not` instead
+ℹ [8667/8800] Built DiophCompression.AtomicCodingHierarchy (4.9s)
+info: DiophCompression/AtomicCodingHierarchy.lean:86:0: 'DiophCompression.atomGraph_degree_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicCodingHierarchy.lean:87:0: 'DiophCompression.atomGraph_degree_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicCodingHierarchy.lean:88:0: 'DiophCompression.atomGraph_degree_two_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicCodingHierarchy.lean:89:0: 'DiophCompression.atomGraph_degree_three_ternary' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicCodingHierarchy.lean:90:0: 'DiophCompression.atomGraph_degree_four_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicCodingHierarchy.lean:91:0: 'DiophCompression.atomicCodingSpectrumZ_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicCodingHierarchy.lean:92:0: 'DiophCompression.atomicCodingSpectrumZ_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicCodingHierarchy.lean:93:0: 'DiophCompression.atomicCodingSpectrumZ_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8668/8800] Built DiophCompression.SemanticQuadraticGeneral.TopDichotomyData (5.2s)
+info: DiophCompression/SemanticQuadraticGeneral/TopDichotomyData.lean:112:0: 'DiophCompression.SemanticQuadraticGeneral.dichotomyG_of_dichotomyGData' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/TopDichotomyData.lean:113:0: 'DiophCompression.SemanticQuadraticGeneral.quadraticProjectionDichotomyZ_all_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SemanticQuadraticGeneral/TopDichotomyData.lean:114:0: 'DiophCompression.SemanticQuadraticGeneral.quadraticProjectionDichotomyZ_all_of_data' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8669/8800] Built ResearchUpgrade.Shadow.FamilyR (5.4s)
+ℹ [8670/8800] Built DiophCompression.CodingDegree (5.1s)
+info: DiophCompression/CodingDegree.lean:33:0: 'DiophCompression.codingDegree_one_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CodingDegree.lean:34:0: 'DiophCompression.codingDegree_two_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CodingDegree.lean:35:0: 'DiophCompression.codingDegree_three_exact' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/CodingDegree.lean:36:0: 'DiophCompression.codingDegree_ge_three_le_four' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8671/8800] Built DiophCompression.AtomicDegreeRank (5.4s)
+info: DiophCompression/AtomicDegreeRank.lean:108:0: 'DiophCompression.atomicDegreeRankZ_eq_top_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicDegreeRank.lean:109:0: 'DiophCompression.atomicDegreeRankZ_eq_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicDegreeRank.lean:110:0: 'DiophCompression.ternarySkolem_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicDegreeRank.lean:111:0: 'DiophCompression.ternarySkolem_atomicRank_three_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/AtomicDegreeRank.lean:112:0: 'DiophCompression.ternarySkolem_atomicRank_two_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8672/8800] Built ResearchUpgrade.RayCounting (9.1s)
+✔ [8673/8800] Built ResearchUpgrade.Shadow.OneWitnessFamilyDataR (5.5s)
+✔ [8674/8800] Built ResearchUpgrade.Shadow.DefsSingularGeneralR (5.5s)
+ℹ [8675/8800] Built DiophCompression.QuadraticPPSeparation (4.0s)
+info: DiophCompression/QuadraticPPSeparation.lean:228:0: 'DiophCompression.cantorScaledPair_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:229:0: 'DiophCompression.ternaryPair_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:230:0: 'DiophCompression.ternaryPair_withinPPZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:231:0: 'DiophCompression.ppQuadratic_graph_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:232:0: 'DiophCompression.ppQuadratic_graph_all_arity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:233:0: 'DiophCompression.atom_two_implies_pp_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:234:0: 'DiophCompression.withinZ_of_withinPPZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:235:0: 'DiophCompression.pp_quadratic_implies_single_quartic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticPPSeparation.lean:236:0: 'DiophCompression.single_quadratic_strict_pp_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8676/8800] Built ResearchUpgrade.MovingPowerRay (8.0s)
+warning: ResearchUpgrade/MovingPowerRay.lean:321:50: This simp argument is unused:
+  derivative_C
+
+Hint: Omit it from the simp argument list.
+  simp [hf, derivative_add, derivative_mul, d̵e̵r̵i̵v̵a̵t̵i̵v̵e̵_̵C̵,̵ ̵derivative_X, eval_add, eval_mul, eval_C, eval_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/MovingPowerRay.lean:322:30: This simp argument is unused:
+  eval_C
+
+Hint: Omit it from the simp argument list.
+  simp [hf, derivative_add, derivative_mul, derivative_C, derivative_X, eval_add, eval_mul,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲e̵v̵a̵l̵_̵C̵,̵ ̵eval_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/MovingPowerRay.lean:334:43: Variable name `hD` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/MovingPowerRay.lean:372:61: Variable name `hb` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/MovingPowerRay.lean:372:74: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/MovingPowerRay.lean:373:5: Variable name `ht₀` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [8677/8800] Built ResearchUpgrade.RankOnePowerRay (9.1s)
+warning: ResearchUpgrade/RankOnePowerRay.lean:37:80: This simp argument is unused:
+  eval_pow
+
+Hint: Omit it from the simp argument list.
+  simp [hf, derivative_add, derivative_mul, derivative_X, eval_add, eval_mul, eval_p̵o̵w̵,̵ ̵e̵v̵a̵l̵_̵C, eval_X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/RankOnePowerRay.lean:37:90: This simp argument is unused:
+  eval_C
+
+Hint: Omit it from the simp argument list.
+  simp [hf, derivative_add, derivative_mul, derivative_X, eval_add, eval_mul, eval_pow, eval_C̵,̵ ̵e̵v̵a̵l̵_̵X]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8678/8800] Built ResearchUpgrade.Shadow.RankOneUncoupledDataR (5.2s)
+ℹ [8679/8800] Built DiophCompression.Folding (5.2s)
+info: DiophCompression/Folding.lean:605:0: 'DiophCompression.ppArityRankZ_fold' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Folding.lean:606:0: 'DiophCompression.ppArityRankZ_two_three_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Folding.lean:607:0: 'DiophCompression.ppArityRankZ_two_finite_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Folding.lean:608:0: 'DiophCompression.atomicDegreeRankZ_ternary_two_top' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/Folding.lean:609:0: 'DiophCompression.atomicDegreeRankZ_preimage_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8680/8800] Built ResearchUpgrade.Shadow.RankOneNormalDataR (4.3s)
+⚠ [8681/8800] Built ResearchUpgrade.Shadow.QuotientRankOneR (4.2s)
+warning: ResearchUpgrade/Shadow/QuotientRankOneR.lean:72:20: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  simp [fboundSG,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+ℹ [8682/8800] Built DiophCompression.OneSorted (6.9s)
+info: DiophCompression/OneSorted.lean:551:0: 'DiophCompression.atomGraphZZ_degree_two_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSorted.lean:552:0: 'DiophCompression.one_sorted_quadratic_no_injective_ternary_graph' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/OneSorted.lean:553:0: 'DiophCompression.atomGraphZZ_degree_one_one' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSorted.lean:554:0: 'DiophCompression.ternaryPairZZ_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSorted.lean:555:0: 'DiophCompression.ppGraphZZ_degree_two_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8683/8800] Built ResearchUpgrade.Shadow.QuotientRankZeroR (15s)
+⚠ [8684/8800] Built DiophCompression.OneSortedPPCoding (4.4s)
+warning: DiophCompression/OneSortedPPCoding.lean:188:8: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [stepSystem, Fin.snoc_last, evalAtZZ, map_sub, eval_X, eval_pairPolyX, Sum.elim_inl,
+          Sum.elim_inr, zW, wW, Fin.append_right, Matrix.cons_val_zero, Matrix.cons_val_one,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DiophCompression/OneSortedPPCoding.lean:194:67: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [stepSystem, Fin.snoc_castSucc, Fin.snoc_last, evalAtZZ, eval_etaPoly,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲Sum.elim_inl, Sum.elim_inr, wW, Fin.append_right, Matrix.cons_val_one,
+  ̲  ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲ ̲M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵z̵e̵r̵o̵,̵Matrix.cons_val_fin_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: DiophCompression/OneSortedPPCoding.lean:321:0: 'DiophCompression.intToNatPoly_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPCoding.lean:322:0: 'DiophCompression.intTupleCode_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPCoding.lean:323:0: 'DiophCompression.ppGraphZZ_step' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPCoding.lean:324:0: 'DiophCompression.intTupleCode_system' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPCoding.lean:325:0: 'DiophCompression.ppGraphZZ_degree_two_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8685/8800] Built DiophCompression.OneSortedFragments (4.2s)
+info: DiophCompression/OneSortedFragments.lean:162:0: 'DiophCompression.withinSingleEquationZZ_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:163:0: 'DiophCompression.withinPPZZ_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:164:0: 'DiophCompression.atomGraphZZ_iff_within' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:165:0: 'DiophCompression.ppGraphZZ_iff_within' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:166:0: 'DiophCompression.singleEqFragmentZZ_subset_ppFragmentZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:167:0: 'DiophCompression.ppZZ_degree_two_subset_singleEquationZZ_degree_four' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:168:0: 'DiophCompression.pp_not_single_quadratic_at_arity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:169:0: 'DiophCompression.quadratic_fragment_strict_at_arity' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedFragments.lean:170:0: 'DiophCompression.quadratic_fragment_chain' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8686/8800] Built DiophCompression.OneSortedPPFolding (4.6s)
+info: DiophCompression/OneSortedPPFolding.lean:297:0: 'DiophCompression.preimageRelZZ_imageRelZZ' depends on axioms: [propext, Quot.sound]
+info: DiophCompression/OneSortedPPFolding.lean:298:0: 'DiophCompression.withinPPZZ_preimage_of_systems' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPFolding.lean:299:0: 'DiophCompression.withinPPZZ_image_of_systems' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPFolding.lean:300:0: 'DiophCompression.withinPPZZ_preimage_intTupleCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPFolding.lean:301:0: 'DiophCompression.withinPPZZ_image_intTupleCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPFolding.lean:302:0: 'DiophCompression.pp_quadratic_internal_arity_collapse' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OneSortedPPFolding.lean:303:0: 'DiophCompression.ppFragmentZZ_two_arity_collapse' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8687/8800] Built DiophCompression.SkolemReduction (5.4s)
+info: DiophCompression/SkolemReduction.lean:325:0: 'DiophCompression.skolemComputable_all' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SkolemReduction.lean:326:0: 'DiophCompression.withinDiophZZ_of_withinPPZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SkolemReduction.lean:327:0: 'DiophCompression.withinPPZZ_two_of_withinDiophZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SkolemReduction.lean:328:0: 'DiophCompression.withinPPZZ_two_iff_withinDiophZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SkolemReduction.lean:329:0: 'DiophCompression.ppFragmentZZ_two_eq_diophFragmentZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8688/8800] Built DiophCompression.FiniteFiberGrowth (6.2s)
+info: DiophCompression/FiniteFiberGrowth.lean:362:0: 'DiophCompression.singleQuadratic_finiteFiber_height_scalar' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/FiniteFiberGrowth.lean:363:0: 'DiophCompression.singleQuadratic_finiteFiber_height_scalar_sup' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/FiniteFiberGrowth.lean:364:0: 'DiophCompression.singleQuadratic_finiteFiber_height_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/FiniteFiberGrowth.lean:365:0: 'DiophCompression.singleQuadratic_function_quadratic_growth' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/FiniteFiberGrowth.lean:366:0: 'DiophCompression.singleQuadratic_injective_dimension_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/FiniteFiberGrowth.lean:367:0: 'DiophCompression.atomGraphZZ_le_two_from_dimension_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8689/8800] Built DiophCompression.FragmentLattice (4.1s)
+info: DiophCompression/FragmentLattice.lean:48:0: 'DiophCompression.withinDiophZZ_of_withinSingleEquationZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/FragmentLattice.lean:49:0: 'DiophCompression.singleEqFragmentZZ_subset_diophFragmentZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/FragmentLattice.lean:50:0: 'DiophCompression.singleEqFragmentZZ_four_eq_ppFragmentZZ_two' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/FragmentLattice.lean:51:0: 'DiophCompression.singleEqFragmentZZ_four_eq_diophFragmentZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/FragmentLattice.lean:52:0: 'DiophCompression.fragment_lattice_ZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8690/8800] Built DiophCompression.InfiniteFiberCertificate (5.7s)
+info: DiophCompression/InfiniteFiberCertificate.lean:264:0: 'DiophCompression.fiber_infinite_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/InfiniteFiberCertificate.lean:265:0: 'DiophCompression.fiber_unbounded_of_certificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/InfiniteFiberCertificate.lean:266:0: 'DiophCompression.certificate_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/InfiniteFiberCertificate.lean:267:0: 'DiophCompression.primeProgression_index_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/InfiniteFiberCertificate.lean:268:0: 'DiophCompression.StepFamilyRealization.point_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/InfiniteFiberCertificate.lean:269:0: 'DiophCompression.fiber_infinite_of_typedCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/InfiniteFiberCertificate.lean:270:0: 'DiophCompression.boundedOrCertified_exclusive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/InfiniteFiberCertificate.lean:271:0: 'DiophCompression.finite_or_infinite_of_boundedOrCertified' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8691/8800] Built DiophCompression.PolynomialGraphs (6.3s)
+info: DiophCompression/PolynomialGraphs.lean:330:0: 'DiophCompression.polynomial_graph_singleQuadratic_of_degree_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:331:0: 'DiophCompression.polynomial_graph_one_not_singleQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:332:0: 'DiophCompression.polynomial_graph_one_singleQuadratic_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:333:0: 'DiophCompression.powerGraph_not_withinSingleEquationZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:334:0: 'DiophCompression.cubic_graph_withinPPZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:335:0: 'DiophCompression.cubic_graph_not_withinSingleEquationZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:336:0: 'DiophCompression.quadratic_fragment_strict_arity_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:337:0: 'DiophCompression.quadratic_fragment_strict_all_arity_ge_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:338:0: 'DiophCompression.square_graph_singleQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:339:0: 'DiophCompression.fourth_power_graph_not_singleQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:340:0: 'DiophCompression.fourth_power_graph_ppQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/PolynomialGraphs.lean:341:0: 'DiophCompression.singleQuadratic_functions_not_closed_under_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8692/8800] Built DiophCompression.MultivariatePolynomialGraphs (4.8s)
+info: DiophCompression/MultivariatePolynomialGraphs.lean:155:0: 'DiophCompression.eval_mul_of_isHomogeneous' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:156:0: 'DiophCompression.topHomogeneous_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:157:0: 'DiophCompression.exists_eval_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:158:0: 'DiophCompression.linePoly_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:159:0: 'DiophCompression.linePoly_coeff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:160:0: 'DiophCompression.linePoly_natDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:161:0: 'DiophCompression.exists_line_natDegree_eq_totalDegree' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:162:0: 'DiophCompression.polynomial_graph_not_singleQuadratic_of_degree_ge_three' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/MultivariatePolynomialGraphs.lean:163:0: 'DiophCompression.polynomial_graph_singleQuadratic_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8693/8800] Built DiophCompression.StructuredCertificates (5.7s)
+info: DiophCompression/StructuredCertificates.lean:422:0: 'DiophCompression.PellUnitOrbitRealization.orbit_norm' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:423:0: 'DiophCompression.MovingModulusStepOrbitSG.c_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:424:0: 'DiophCompression.movingModulusStepOrbitSG_of_base_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:425:0: 'DiophCompression.MovingModulusStepOrbitRealization.output_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:426:0: 'DiophCompression.fiber_infinite_of_structuredCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:427:0: 'DiophCompression.boundedOrStructured_exclusive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:428:0: 'DiophCompression.finite_or_infinite_of_boundedOrStructured' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:429:0: 'DiophCompression.StructuredCertificate.pullback_kind' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:430:0: 'DiophCompression.polynomialProgression_of_periodic_shift' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:431:0: 'DiophCompression.movingModulusStepOrbitSG_of_negSlope' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/StructuredCertificates.lean:432:0: 'DiophCompression.extract_B4_movingStep_spec' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8694/8800] Built DiophCompression.ComputabilityFragments (4.8s)
+info: DiophCompression/ComputabilityFragments.lean:176:0: 'DiophCompression.primrec_evalAtZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:177:0: 'DiophCompression.primrecPred_evalAtZZ_eq_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:178:0: 'DiophCompression.primrec₂_solCheck' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:179:0: 'DiophCompression.exists_solCheck_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:180:0: 'DiophCompression.rePred_exists_solCheck' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:181:0: 'DiophCompression.powerGraphZZ_computablePred' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:182:0: 'DiophCompression.dioph_relation_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:183:0: 'DiophCompression.ppQuadratic_relation_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:184:0: 'DiophCompression.singleQuartic_relation_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:185:0: 'DiophCompression.recFragmentZZ_subset_reFragmentZZ' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:186:0: 'DiophCompression.singleQuadratic_relation_recursive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:187:0: 'DiophCompression.singleEqFragmentZZ_two_subset_recFragmentZZ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:188:0: 'DiophCompression.ppQuadratic_eq_re_of_DPRM' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:189:0: 'DiophCompression.singleQuartic_eq_re_of_DPRM' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/ComputabilityFragments.lean:190:0: 'DiophCompression.relation_phase_diagram' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8695/8800] Built DiophCompression.OutputNegation (5.1s)
+warning: DiophCompression/OutputNegation.lean:180:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+info: DiophCompression/OutputNegation.lean:212:0: 'DiophCompression.evalAtZZ_negOutputPoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OutputNegation.lean:213:0: 'DiophCompression.mem_fiberZZ_negOutputPoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OutputNegation.lean:214:0: 'DiophCompression.fiberZZ_negOutputPoly' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OutputNegation.lean:215:0: 'DiophCompression.StructuredCertificate.negOutput_kind' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OutputNegation.lean:216:0: 'DiophCompression.structuredCertificate_of_flipZero_kind' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OutputNegation.lean:217:0: 'DiophCompression.infinite_integer_set_pos_or_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/OutputNegation.lean:218:0: 'DiophCompression.infinite_integer_fiber_pos_or_neg' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8696/8800] Built ResearchUpgrade.Shadow.FullRankAssemblyDataR (52s)
+warning: ResearchUpgrade/Shadow/FullRankAssemblyDataR.lean:108:5: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/Shadow/FullRankAssemblyDataR.lean:157:2: 'skip' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ResearchUpgrade/Shadow/FullRankAssemblyDataR.lean:298:6: 'skip' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: ResearchUpgrade/Shadow/FullRankAssemblyDataR.lean:455:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/Shadow/FullRankAssemblyDataR.lean:474:6: 'skip' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+ℹ [8697/8800] Built DiophCompression.HaltingTransport (4.2s)
+info: DiophCompression/HaltingTransport.lean:75:0: 'DiophCompression.haltingRelZZ_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/HaltingTransport.lean:76:0: 'DiophCompression.haltingRelZZ_not_computablePred' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/HaltingTransport.lean:77:0: 'DiophCompression.recursive_strictly_contained_re' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/HaltingTransport.lean:78:0: 'DiophCompression.relation_phase_diagram_strict' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8698/8800] Built DiophCompression.LeafExtraction (4.0s)
+info: DiophCompression/LeafExtraction.lean:282:0: 'DiophCompression.injective_of_lt_succ_from' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:283:0: 'DiophCompression.linearFamilyPoly_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:284:0: 'DiophCompression.extract_linear_family_q' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:285:0: 'DiophCompression.quadraticFamilyPoly_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:286:0: 'DiophCompression.extract_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:287:0: 'DiophCompression.extract_A3_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:288:0: 'DiophCompression.extract_B1_fixed_periodic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:289:0: 'DiophCompression.pellFamily_coords_pos' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:290:0: 'DiophCompression.pellFamily_X_strictMono' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:291:0: 'DiophCompression.extract_B0_polynomial_kind' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:292:0: 'DiophCompression.extract_A2_polynomial_kind' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/LeafExtraction.lean:293:0: 'DiophCompression.extract_A1_pell_kind' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8699/8800] Built ResearchUpgrade.Shadow.MovingModulusGeneralR (4.4s)
+warning: ResearchUpgrade/Shadow/MovingModulusGeneralR.lean:74:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ℹ [8700/8800] Built DiophCompression.UnaryDiagonal (4.0s)
+info: DiophCompression/UnaryDiagonal.lean:245:0: 'DiophCompression.decodePolyZZ_totalDegree_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/UnaryDiagonal.lean:246:0: 'DiophCompression.decodePolyZZ_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/UnaryDiagonal.lean:247:0: 'DiophCompression.quadraticSolvabilityDecidable_of_uniform' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/UnaryDiagonal.lean:248:0: 'DiophCompression.diagonalSetZZ_computablePred' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/UnaryDiagonal.lean:249:0: 'DiophCompression.diagonalSetZZ_not_singleQuadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/UnaryDiagonal.lean:250:0: 'DiophCompression.singleQuadratic_strict_recursive_all_positive_arity' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/UnaryDiagonal.lean:251:0: 'DiophCompression.unary_singleQuadratic_strict_recursive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/UnaryDiagonal.lean:252:0: 'DiophCompression.relation_phase_diagram_all_positive_arity' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8701/8800] Built DiophCompression.SummitTarget (4.4s)
+info: DiophCompression/SummitTarget.lean:111:0: 'DiophCompression.uniform_bound_certificate_exclusive' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitTarget.lean:112:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_implies_boundedOrStructured' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitTarget.lean:113:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_implies_finiteFiberHeight' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitTarget.lean:114:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_implies_boundedOrInfinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitTarget.lean:115:0: 'DiophCompression.negOutputPoly_solution_transport' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitTarget.lean:116:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_negOutputPoly' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitTarget.lean:117:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_negOutputPoly_kind' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [8702/8800] Built DiophCompression.QuadraticCodes (4.6s)
+info: DiophCompression/QuadraticCodes.lean:352:0: 'DiophCompression.quadraticCode_eval_primrec' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticCodes.lean:353:0: 'DiophCompression.quadraticCode_toPoly_totalDegree_le_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticCodes.lean:354:0: 'DiophCompression.quadraticCode_toPoly_eval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticCodes.lean:355:0: 'DiophCompression.quadraticCode_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticCodes.lean:356:0: 'DiophCompression.decodePolyZZ_eq_codeOfNat' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticCodes.lean:357:0: 'DiophCompression.decodePolyZZ_natOfCode' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticCodes.lean:358:0: 'DiophCompression.uniformCodeGS_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/QuadraticCodes.lean:359:0: 'DiophCompression.uniformCodeGS_implies_perEquationGS' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [8703/8800] Built ResearchUpgrade.Shadow.SingularAssemblyR (7.8s)
+warning: ResearchUpgrade/Shadow/SingularAssemblyR.lean:336:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8704/8800] Built DiophCompression.BranchExhaustion (4.6s)
+warning: DiophCompression/BranchExhaustion.lean:154:53: This simp argument is unused:
+  hb
+
+Hint: Omit it from the simp argument list.
+  simp [singularBranch, hb,̵ ̵h̵b̵0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DiophCompression/BranchExhaustion.lean:184:55: This simp argument is unused:
+  hneg
+
+Hint: Omit it from the simp argument list.
+  simp [hn̵e̵g̵,̵ ̵h̵z, hC]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: DiophCompression/BranchExhaustion.lean:185:47: This simp argument is unused:
+  hneg
+
+Hint: Omit it from the simp argument list.
+  simp [hn̵e̵g̵,̵ ̵h̵z, hC]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: DiophCompression/BranchExhaustion.lean:220:0: 'DiophCompression.branch_kind_iff_not_bounded' depends on axioms: [propext]
+info: DiophCompression/BranchExhaustion.lean:221:0: 'DiophCompression.no_unclassified_quadratic_branch' does not depend on any axioms
+info: DiophCompression/BranchExhaustion.lean:222:0: 'DiophCompression.branch_table_partition' depends on axioms: [propext]
+info: DiophCompression/BranchExhaustion.lean:223:0: 'DiophCompression.fullRank_structured_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BranchExhaustion.lean:224:0: 'DiophCompression.fullRank_branch_kinds' does not depend on any axioms
+info: DiophCompression/BranchExhaustion.lean:225:0: 'DiophCompression.singular_structured_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BranchExhaustion.lean:226:0: 'DiophCompression.oneWitness_structured_cases' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/BranchExhaustion.lean:227:0: 'DiophCompression.oneWitness_branch_kinds' does not depend on any axioms
+info: DiophCompression/BranchExhaustion.lean:228:0: 'DiophCompression.singular_branch_kinds' does not depend on any axioms
+ℹ [8705/8800] Built DiophCompression.GlobalQuadraticCode (3.0s)
+info: DiophCompression/GlobalQuadraticCode.lean:77:0: 'DiophCompression.fixedArityCode_matches_QuadraticCode' depends on axioms: [propext]
+info: DiophCompression/GlobalQuadraticCode.lean:78:0: 'DiophCompression.fixedArityInstance_parameterArity' depends on axioms: [propext]
+info: DiophCompression/GlobalQuadraticCode.lean:79:0: 'DiophCompression.globalGS_implies_fixedArityGS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/GlobalQuadraticCode.lean:80:0: 'DiophCompression.globalGS_implies_uniformGS' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/GlobalQuadraticCode.lean:81:0: 'DiophCompression.globalGS_implies_perEquationGS' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [8706/8800] Built ResearchUpgrade.Shadow.TopDichotomyDataR (3.0s)
+⚠ [8707/8800] Built DiophCompression.GSInputCompiler (3.9s)
+warning: DiophCompression/GSInputCompiler.lean:35:12: This simp argument is unused:
+  optLookup
+
+Hint: Omit it from the simp argument list.
+  simp [o̵p̵t̵L̵o̵o̵k̵u̵p̵,̵ ̵varLookup, List.getElem?_append_left h]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+info: DiophCompression/GSInputCompiler.lean:115:0: 'DiophCompression.splitFactor_spec' depends on axioms: [propext]
+info: DiophCompression/GSInputCompiler.lean:116:0: 'DiophCompression.substParamTerm_evalW' depends on axioms: [propext]
+info: DiophCompression/GSInputCompiler.lean:117:0: 'DiophCompression.substParamCode_evalW' depends on axioms: [propext]
+info: DiophCompression/GSInputCompiler.lean:118:0: 'DiophCompression.toConcreteEquation_witnessArity' depends on axioms: [propext]
+info: DiophCompression/GSInputCompiler.lean:119:0: 'DiophCompression.globalInstance_eval_iff' depends on axioms: [propext]
+info: DiophCompression/GSInputCompiler.lean:120:0: 'DiophCompression.globalInstance_solvable_iff' depends on axioms: [propext]
+info: DiophCompression/GSInputCompiler.lean:121:0: 'DiophCompression.toConcreteEquation_parameterFree' depends on axioms: [propext]
+info: DiophCompression/GSInputCompiler.lean:122:0: 'DiophCompression.rational_clearing_int_points' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8708/8800] Built DiophCompression.SummitReduction (3.6s)
+info: DiophCompression/SummitReduction.lean:103:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_of_infiniteFiberStructured' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitReduction.lean:104:0: 'DiophCompression.infiniteFiberStructured_of_uniformQuadraticFiberStructureZZ' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitReduction.lean:105:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_iff_infiniteFiberStructured' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitReduction.lean:106:0: 'DiophCompression.infiniteFiberStructured_of_nonneg_halves' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitReduction.lean:107:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_of_nonneg_halves' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitReduction.lean:108:0: 'DiophCompression.weak_target_trivial_on_finite_fibre' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [8709/8800] Built DiophCompression.SummitClosure (4.4s)
+info: DiophCompression/SummitClosure.lean:259:0: 'DiophCompression.exists_fiberSetG_eq_fiberNatSigned' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitClosure.lean:260:0: 'DiophCompression.structuredCertificate_of_family' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitClosure.lean:261:0: 'DiophCompression.structuredCertificate_of_half_infinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitClosure.lean:262:0: 'DiophCompression.infiniteFiberStructured_of_quadratic' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitClosure.lean:263:0: 'DiophCompression.uniformQuadraticFiberStructureZZ_of_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitClosure.lean:264:0: 'DiophCompression.quadraticFiberBoundedOrStructured_of_quadratic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: DiophCompression/SummitClosure.lean:265:0: 'DiophCompression.quadraticProjectionDichotomyZ_structured' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: DiophCompression/SummitClosure.lean:266:0: 'DiophCompression.singleQuadratic_fiber_bounded_or_structurallyInfinite' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+✔ [8710/8800] Built ResearchUpgrade.CertificateEnvelope (7.9s)
+✔ [8711/8800] Built ResearchUpgrade.Shadow.SummitClosureR (5.1s)
+✔ [8712/8800] Built ResearchUpgrade.UniformFiniteOrLog (4.5s)
+✔ [8713/8800] Built ResearchUpgrade.Sharpness (7.2s)
+⚠ [8714/8800] Built ResearchUpgrade.SmallLeaves (12s)
+warning: ResearchUpgrade/SmallLeaves.lean:151:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SmallLeaves.lean:239:17: This simp argument is unused:
+  smul_smul
+
+Hint: Omit it from the simp argument list.
+  simp only [QuadForm.eval, scale, dotProduct_smul, smul_dotProduct, mulVec_smul, smul_mulVec,
+      smul_eq_mul,̵ ̵s̵m̵u̵l̵_̵s̵m̵u̵l̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SmallLeaves.lean:275:30: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/SmallLeaves.lean:292:30: Variable name `hN` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/SmallLeaves.lean:334:48: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.mk_one, Matrix.cons_val_one, M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵,̵ ̵Matrix.cons_val_zero, Matrix.cons_val_fin_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SmallLeaves.lean:334:66: This simp argument is unused:
+  Matrix.cons_val_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [Fin.mk_one, Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val_z̵e̵r̵o̵,̵
+  ̵ ̵ ̵ ̵ ̵ ̵ ̵M̵a̵t̵r̵i̵x̵.̵c̵o̵n̵s̵_̵v̵a̵l̵_̵fin_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SmallLeaves.lean:343:19: Variable name `h` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8715/8800] Built ResearchUpgrade.SharpnessUnconditional (4.5s)
+✔ [8716/8800] Built ResearchUpgrade.C2Partial (8.1s)
+⚠ [8717/8800] Built ResearchUpgrade.C2DeltaZero (5.1s)
+warning: ResearchUpgrade/C2DeltaZero.lean:151:33: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ResearchUpgrade/C2DeltaZero.lean:179:18: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [8718/8800] Built ResearchUpgrade.NInputNoWitness (7.3s)
+warning: ResearchUpgrade/NInputNoWitness.lean:345:40: `Int.ofNat_nonneg` has been deprecated: Use `Int.natCast_nonneg` instead
+warning: ResearchUpgrade/NInputNoWitness.lean:347:40: `Int.ofNat_nonneg` has been deprecated: Use `Int.natCast_nonneg` instead
+warning: ResearchUpgrade/NInputNoWitness.lean:361:23: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/NInputNoWitness.lean:436:25: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Pn, dotProduct, Matrix.mulVec, Fin.sum_univ_two, Matrix.cons_val_zero,
+      Matrix.cons_val_one, M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵,̵ ̵Matrix.cons_val', Matrix.empty_val', Matrix.cons_val_fin_one,
+  ̲  ̲ ̲ ̲Matrix.of_apply, Matrix.head_fin_const]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/NInputNoWitness.lean:437:46: This simp argument is unused:
+  Matrix.head_fin_const
+
+Hint: Omit it from the simp argument list.
+  simp only [Pn, dotProduct, Matrix.mulVec, Fin.sum_univ_two, Matrix.cons_val_zero,
+      Matrix.cons_val_one, Matrix.head_cons, Matrix.cons_val', Matrix.empty_val',
+      Matrix.cons_val_fin_one, Matrix.of_apply,̵ ̵M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵f̵i̵n̵_̵c̵o̵n̵s̵t̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/NInputNoWitness.lean:444:47: This simp argument is unused:
+  Matrix.head_cons
+
+Hint: Omit it from the simp argument list.
+  simp only [Rn, Pn, dotProduct, Matrix.mulVec, Fin.sum_univ_two, Pi.zero_apply,
+      Matrix.cons_val_zero, Matrix.cons_val_one, M̵a̵t̵r̵i̵x̵.̵h̵e̵a̵d̵_̵c̵o̵n̵s̵,̵ ̵Matrix.cons_val', Matrix.empty_val',
+  ̲  ̲ ̲ ̲Matrix.cons_val_fin_one, Matrix.of_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8719/8800] Built ResearchUpgrade.C2General (4.2s)
+✔ [8720/8800] Built ResearchUpgrade.NoWitnessDimension (4.5s)
+✔ [8721/8800] Built ResearchUpgrade.C3Reflection (5.7s)
+⚠ [8722/8800] Built ResearchUpgrade.C2Degenerate (4.2s)
+warning: ResearchUpgrade/C2Degenerate.lean:118:58: Variable name `hm` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8723/8800] Built ResearchUpgrade.LinearBranchDimension (4.7s)
+✔ [8724/8800] Built ResearchUpgrade.NoWitnessCompiler (4.7s)
+✔ [8725/8800] Built ResearchUpgrade.CompleteSquare (5.0s)
+✔ [8726/8800] Built ResearchUpgrade.DoubledCentre (5.1s)
+✔ [8727/8800] Built ResearchUpgrade.IsotropicDirection (4.4s)
+✔ [8728/8800] Built ResearchUpgrade.RankExcessCompiler (5.3s)
+✔ [8729/8800] Built ResearchUpgrade.ClearDenominators (4.4s)
+✔ [8730/8800] Built ResearchUpgrade.QuadCoef (4.1s)
+✔ [8731/8800] Built ResearchUpgrade.RankExcessControl (4.5s)
+✔ [8732/8800] Built ResearchUpgrade.IntegerModel (4.4s)
+✔ [8733/8800] Built ResearchUpgrade.IsotropicSection (4.0s)
+✔ [8734/8800] Built ResearchUpgrade.Transfer (4.5s)
+✔ [8735/8800] Built ResearchUpgrade.IsotropicCoset (4.2s)
+⚠ [8736/8800] Built ResearchUpgrade.AffineSolution (5.1s)
+warning: ResearchUpgrade/AffineSolution.lean:64:6: 'push_cast at hanchor' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8737/8800] Built ResearchUpgrade.IsotropicBranch (4.2s)
+warning: ResearchUpgrade/IsotropicBranch.lean:40:4: try 'simp' instead of 'simpa'
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+⚠ [8738/8800] Built ResearchUpgrade.CosetWrapper (4.1s)
+warning: ResearchUpgrade/CosetWrapper.lean:61:2: 'push_cast' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [8739/8800] Built ResearchUpgrade.AffineNormalForm (4.4s)
+✔ [8740/8800] Built ResearchUpgrade.Unconditional (3.9s)
+✔ [8741/8800] Built ResearchUpgrade.PellPlane (7.1s)
+⚠ [8742/8800] Built ResearchUpgrade.N4Control (5.0s)
+warning: ResearchUpgrade/N4Control.lean:45:4: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  simp [D3, IntQuad.eval, dotProduct, Matrix.mulVec, pt, Fintype.sum_sum_type,̵
+  ̵ ̵ ̵ ̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/N4Control.lean:118:71: 'push_cast at hz' tactic does nothing
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [8743/8800] Built ResearchUpgrade.FourSquareSlack (5.0s)
+warning: ResearchUpgrade/FourSquareSlack.lean:87:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/FourSquareSlack.lean:133:4: Try `simp at this` instead of `simpa using this`
+
+Note: This linter can be disabled with `set_option linter.unnecessarySimpa false`
+warning: ResearchUpgrade/FourSquareSlack.lean:84:27: Variable name `hT` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ResearchUpgrade/FourSquareSlack.lean:306:55: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  simp only [QuadForm.eval, castQ, Matrix.zero_mulVec, a̵dd̵_̵z̵e̵r̵o,̵ ̵d̵o̵tProduct]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/FourSquareSlack.lean:345:36: This simp argument is unused:
+  Fin.sum_univ_one
+
+Hint: Omit it from the simp argument list.
+  simp [Family.Sol, Family.lin, Ex,̵ ̵F̵i̵n̵.̵s̵u̵m̵_̵u̵n̵i̵v̵_̵o̵n̵e̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8744/8800] Built ResearchUpgrade.NormTotality (4.4s)
+✔ [8745/8800] Built ResearchUpgrade.PellNonsquare (4.3s)
+✔ [8746/8800] Built ResearchUpgrade.NormLift (4.7s)
+⚠ [8747/8800] Built ResearchUpgrade.BoxCriterion (4.5s)
+warning: ResearchUpgrade/BoxCriterion.lean:69:9: Variable name `i` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8748/8800] Built ResearchUpgrade.FamilySE2Bridge (4.7s)
+✔ [8749/8800] Built ResearchUpgrade.PellQuadric (4.2s)
+✔ [8750/8800] Built ResearchUpgrade.ConstResidual (4.9s)
+✔ [8751/8800] Built ResearchUpgrade.FourSquareFinite (5.4s)
+✔ [8752/8800] Built ResearchUpgrade.PellBranch (5.3s)
+✔ [8753/8800] Built ResearchUpgrade.CentreReflection (4.7s)
+✔ [8754/8800] Built ResearchUpgrade.BranchSplit (4.1s)
+✔ [8755/8800] Built ResearchUpgrade.DefiniteShell (7.2s)
+✔ [8756/8800] Built ResearchUpgrade.DimensionII_D (3.9s)
+✔ [8757/8800] Built ResearchUpgrade.ShellControls (5.0s)
+✔ [8758/8800] Built ResearchUpgrade.Summit (4.3s)
+✔ [8759/8800] Built ResearchUpgrade.FidelityBridge (4.2s)
+✔ [8760/8800] Built ResearchUpgrade.FamilySealedBridge (4.2s)
+✔ [8761/8800] Built ResearchUpgrade.Reduction (4.2s)
+⚠ [8762/8800] Built ResearchUpgrade.RankOne (4.2s)
+warning: ResearchUpgrade/RankOne.lean:59:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/RankOne.lean:77:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/RankOne.lean:129:5: Variable name `D'` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [8763/8800] Built ResearchUpgrade.RankOneConfluence (4.0s)
+✔ [8764/8800] Built ResearchUpgrade.DefiniteReduction (4.8s)
+⚠ [8765/8800] Built ResearchUpgrade.CommonSlopeCompiler (5.8s)
+warning: ResearchUpgrade/CommonSlopeCompiler.lean:245:34: `Int.emod_add_ediv` has been deprecated: Use `Int.emod_add_mul_ediv` instead
+warning: ResearchUpgrade/CommonSlopeCompiler.lean:327:28: This simp argument is unused:
+  Fintype.card_fun
+
+Hint: Omit it from the simp argument list.
+  simp [Fintype.card_sum,̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵c̵a̵r̵d̵_̵f̵u̵n̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8766/8800] Built ResearchUpgrade.DefiniteBinary (5.0s)
+✔ [8767/8800] Built ResearchUpgrade.R42Completion (3.6s)
+✔ [8768/8800] Built ResearchUpgrade.AffineSection (5.8s)
+✔ [8769/8800] Built ResearchUpgrade.ResidualReduction (4.5s)
+✔ [8770/8800] Built ResearchUpgrade.R43Completion (5.0s)
+✔ [8771/8800] Built ResearchUpgrade.IsometryCertificate (5.5s)
+⚠ [8772/8800] Built ResearchUpgrade.SectionRigidity (7.0s)
+warning: ResearchUpgrade/SectionRigidity.lean:137:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SectionRigidity.lean:379:10: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SectionRigidity.lean:507:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SectionRigidity.lean:387:24: This simp argument is unused:
+  if_neg (Ne.symm hne)
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.sub_apply, Pi.smul_apply, smul_eq_mul, Pi.zero_apply, hsingle,
+              if_neg hne,̵ ̵i̵f̵_̵n̵e̵g̵ ̵(̵N̵e̵.̵s̵y̵m̵m̵ ̵h̵n̵e̵)̵] at e11 e21 e22
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: ResearchUpgrade/SectionRigidity.lean:678:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SectionRigidity.lean:704:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SectionRigidity.lean:724:17: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8773/8800] Built ResearchUpgrade.CCRCompilers (4.6s)
+⚠ [8774/8800] Built ResearchUpgrade.CCRControls (5.1s)
+warning: ResearchUpgrade/CCRControls.lean:52:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/CCRControls.lean:76:4: This simp argument is unused:
+  Fintype.sum_sum_type
+
+Hint: Omit it from the simp argument list.
+  simp [QuadraticGraphData.zPolarQ, QuadraticGraphData.zLinQ, QuadraticGraphData.zLin, noOut,
+  ̲  ̲ ̲ ̲c̵e̵n̵t̵r̵e̵A̵t̵,̵
+  ̵ ̵ ̵ ̵ ̵F̵i̵n̵t̵y̵p̵e̵.̵s̵u̵m̵_̵s̵u̵m̵_̵t̵y̵p̵e̵]̵c̲e̲n̲t̲r̲e̲A̲t̲]̲
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [8775/8800] Built ResearchUpgrade.TCERSlice (6.8s)
+warning: ResearchUpgrade/TCERSlice.lean:75:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8776/8800] Built ResearchUpgrade.TCERCapstones (4.1s)
+warning: ResearchUpgrade/TCERCapstones.lean:91:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8777/8800] Built ResearchUpgrade.TCERFullNF (3.4s)
+✔ [8778/8800] Built ResearchUpgrade.FullNFBranches (3.4s)
+✔ [8779/8800] Built ResearchUpgrade.FullNFExtraction (3.5s)
+⚠ [8780/8800] Built ResearchUpgrade.IsotropicEichler (4.1s)
+warning: ResearchUpgrade/IsotropicEichler.lean:43:17: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/IsotropicEichler.lean:224:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/IsotropicEichler.lean:251:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [8781/8800] Built ResearchUpgrade.SplitRankTwo (6.6s)
+warning: ResearchUpgrade/SplitRankTwo.lean:25:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SplitRankTwo.lean:47:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SplitRankTwo.lean:146:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SplitRankTwo.lean:152:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SplitRankTwo.lean:159:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SplitRankTwo.lean:244:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/SplitRankTwo.lean:283:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8782/8800] Built ResearchUpgrade.GeneralFullNF (3.4s)
+✔ [8783/8800] Built ResearchUpgrade.CommonSlopeForward (4.2s)
+✔ [8784/8800] Built ResearchUpgrade.FullNFControls (4.3s)
+⚠ [8785/8800] Built ResearchUpgrade.VectorClassification (4.2s)
+warning: ResearchUpgrade/VectorClassification.lean:157:9: `Int.emod_add_ediv` has been deprecated: Use `Int.emod_add_mul_ediv` instead
+warning: ResearchUpgrade/VectorClassification.lean:155:55: This simp argument is unused:
+  Fin.val_mk
+
+Hint: Omit it from the simp argument list.
+  simp only [Pi.add_apply, Pi.smul_apply, smul_eq_mul,̵ ̵F̵i̵n̵.̵v̵a̵l̵_̵m̵k̵]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [8786/8800] Built SelectionS65.QuadForm (4.3s)
+⚠ [8787/8800] Built ResearchUpgrade.ScalarRoots (4.9s)
+warning: ResearchUpgrade/ScalarRoots.lean:236:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/ScalarRoots.lean:239:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/ScalarRoots.lean:247:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: ResearchUpgrade/ScalarRoots.lean:328:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+✔ [8788/8800] Built SelectionS65.FourSq (4.6s)
+✔ [8789/8800] Built SelectionS65.NormDim (4.0s)
+✔ [8790/8800] Built ResearchUpgrade.ScalarClassification (4.9s)
+✔ [8791/8800] Built SelectionS65.Relations (4.4s)
+✔ [8792/8800] Built ResearchUpgrade.SlopeStructure (4.9s)
+✔ [8793/8800] Built ResearchUpgrade.WitnessCount (4.3s)
+✔ [8794/8800] Built ResearchUpgrade (3.4s)
+✔ [8795/8800] Built SelectionS65.PolyGraph (5.8s)
+ℹ [8796/8800] Built SelectionS65.Corr (6.7s)
+info: SelectionS65/Corr.lean:16:0: @theorem2_sealed : ∀ {n m : ℕ} {f : (Fin n → ℤ) → Fin m → ℤ},
+  SingleQuadraticDefinableFunctionZZ f → LinearGrowth f ∨ WeakVectorCosetNF f
+info: SelectionS65/Corr.lean:17:0: 'theorem2_sealed' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SelectionS65/Corr.lean:18:0: singleQuadratic_sharp_iff : ∀ (n m : ℕ), (∃ f, SingleQuadraticDefinableFunctionZZ f ∧ Function.Injective f) ↔ n ≤ m
+info: SelectionS65/Corr.lean:19:0: 'DiophCompression.ResearchUpgrade.singleQuadratic_sharp_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SelectionS65/Corr.lean:20:0: @singleQuadratic_injective_dimension_sharp : ∀ {n m : ℕ} {f : (Fin n → ℤ) → Fin m → ℤ},
+  SingleQuadraticDefinableFunctionZZ f → Function.Injective f → n ≤ m
+info: SelectionS65/Corr.lean:21:0: 'DiophCompression.ResearchUpgrade.singleQuadratic_injective_dimension_sharp' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:22:0: @summit_of_defines : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {f : (Fin n → ℤ) → Fin m → ℤ},
+  D.Defines f → LinearGrowth f ∨ WeakVectorCosetNF f
+info: SelectionS65/Corr.lean:23:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.summit_of_defines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:24:0: @graphData_of_singleQuadraticDefinable : ∀ {n m : ℕ} {f : (Fin n → ℤ) → Fin m → ℤ},
+  SingleQuadraticDefinableFunctionZZ f → ∃ r D, D.Defines f
+info: SelectionS65/Corr.lean:25:0: 'DiophCompression.ResearchUpgrade.graphData_of_singleQuadraticDefinable' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:26:0: @range_polarMapQ_eq_dualAnnihilator_ker : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  D.polarMapQ.range = D.polarMapQ.ker.dualAnnihilator
+info: SelectionS65/Corr.lean:27:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.range_polarMapQ_eq_dualAnnihilator_ker' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:28:0: @zLinQ_radicalQ_eq_zero : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {a : Fin n → ℤ} {z₀ : OutWit m r → ℤ},
+  0 < m → D.OutputUnique → D.SolZ a z₀ → (∃ v, D.zQuad v ≠ 0) → ∀ {e : OutWit m r → ℚ}, D.InRadicalQ e → D.zLinQ a e = 0
+info: SelectionS65/Corr.lean:29:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.zLinQ_radicalQ_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:30:0: @outCoordQ_radicalQ_eq_zero : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {a : Fin n → ℤ} {z₀ : OutWit m r → ℤ},
+  0 < m →
+    D.OutputUnique →
+      D.SolZ a z₀ → (∃ v, D.zQuad v ≠ 0) → ∀ {e : OutWit m r → ℚ}, D.InRadicalQ e → ∀ (j : Fin m), e (Sum.inl j) = 0
+info: SelectionS65/Corr.lean:31:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.outCoordQ_radicalQ_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:32:0: @exists_affine_centre_of_all_inputs : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  (∀ (a : Fin n → ℤ) (e : OutWit m r → ℚ), D.InRadicalQ e → D.zLinQ a e = 0) →
+    ∃ c₀ cs, ∀ (a : Fin n → ℤ), D.IsCentre a (c₀ + ∑ i, ↑(a i) • cs i)
+info: SelectionS65/Corr.lean:33:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_affine_centre_of_all_inputs' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:34:0: @completeSquare : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {a : Fin n → ℤ} {c : OutWit m r → ℚ},
+  D.IsCentre a c → ∀ (z : OutWit m r → ℚ), D.zQuadQ z + D.zLinQ a z + ↑(D.aPart a) = D.zQuadQ (z - c) - D.residual a c
+info: SelectionS65/Corr.lean:35:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.completeSquare' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:36:0: @dim_le_of_linearGrowth_injective : ∀ {n m : ℕ} {f : (Fin n → ℤ) → Fin m → ℤ},
+  LinearGrowth f → Function.Injective f → n ≤ m
+info: SelectionS65/Corr.lean:37:0: 'DiophCompression.ResearchUpgrade.dim_le_of_linearGrowth_injective' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:38:0: @not_injective_of_weakVectorCosetNF : ∀ {n m : ℕ},
+  m < n → ∀ (f : (Fin n → ℤ) → Fin m → ℤ), WeakVectorCosetNF f → ¬Function.Injective f
+info: SelectionS65/Corr.lean:39:0: 'DiophCompression.ResearchUpgrade.not_injective_of_weakVectorCosetNF' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:40:0: @exists_collision_vector : ∀ {n m : ℕ},
+  m < n → ∀ (q : Fin m → QuadForm n), ∃ v, v ≠ 0 ∧ ∀ (j : Fin m), (q j).eval (castQ v) = (q j).eval (castQ (-v))
+info: SelectionS65/Corr.lean:41:0: 'DiophCompression.ResearchUpgrade.exists_collision_vector' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SelectionS65/Corr.lean:42:0: @branch_exhaustive : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  (∀ (x : OutWit m r → ℚ), D.zQuadQ x = 0) ∨
+    (∃ x, D.zQuadQ x = 0 ∧ ¬D.InRadicalQ x) ∨
+      (∀ (x : OutWit m r → ℚ), D.zQuadQ x = 0 → D.InRadicalQ x) ∧
+        ((∀ (u : OutWit m r → ℚ), 0 ≤ D.zQuadQ u) ∨
+          (∀ (u : OutWit m r → ℚ), D.zQuadQ u ≤ 0) ∨ (∃ p, 0 < D.zQuadQ p) ∧ ∃ q, D.zQuadQ q < 0)
+info: SelectionS65/Corr.lean:43:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.branch_exhaustive' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:44:0: @witnessCoeff_eq_zero : ∀ {n r : ℕ} (D : QuadraticGraphData n 1 r),
+  (∀ (v w : OutWit 1 r → ℤ), D.zPolar v w = 0) →
+    D.OutputUnique → ∀ {x : Fin n → ℤ} {z₀ : OutWit 1 r → ℤ}, D.SolZ x z₀ → ∀ (k : Fin r), D.zLin x (Sum.inr k) = 0
+info: SelectionS65/Corr.lean:45:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.witnessCoeff_eq_zero' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:46:0: @m_le_one_of_linear : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  (∀ (v w : OutWit m r → ℤ), D.zPolar v w = 0) →
+    D.OutputUnique →
+      ∀ {a : Fin n → ℤ} {z₀ : OutWit m r → ℤ}, D.SolZ a z₀ → ∀ (hm : 0 < m), D.zLin a (Sum.inl ⟨0, hm⟩) ≠ 0 ∧ m ≤ 1
+info: SelectionS65/Corr.lean:47:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.m_le_one_of_linear' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:48:0: @weakVectorCosetNF_of_linearBranch_general : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  (∀ (v w : OutWit m r → ℤ), D.zPolar v w = 0) → ∀ {f : (Fin n → ℤ) → Fin m → ℤ}, D.Defines f → WeakVectorCosetNF f
+info: SelectionS65/Corr.lean:49:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.weakVectorCosetNF_of_linearBranch_general' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:50:0: @exists_isotropic_nonorthogonal_of_nonradical : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {e₀ : OutWit m r → ℚ},
+  D.zQuadQ e₀ = 0 →
+    ¬D.InRadicalQ e₀ → ∀ {v₀ : OutWit m r → ℚ}, ¬D.InRadicalQ v₀ → ∃ e, D.zQuadQ e = 0 ∧ D.zPolarQ v₀ e ≠ 0
+info: SelectionS65/Corr.lean:51:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_isotropic_nonorthogonal_of_nonradical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:52:0: @exists_rational_solution_of_isotropic : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {a : Fin n → ℤ}
+  {c : OutWit m r → ℚ},
+  D.IsCentre a c →
+    ∀ {e v₀ : OutWit m r → ℚ}, D.zQuadQ e = 0 → D.zPolarQ v₀ e ≠ 0 → ∃ w, D.zQuadQ w + D.zLinQ a w + ↑(D.aPart a) = 0
+info: SelectionS65/Corr.lean:53:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_rational_solution_of_isotropic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:54:0: @weakVectorCosetNF_of_isotropic : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {f : (Fin n → ℤ) → Fin m → ℤ},
+  D.Defines f →
+    ∀ {c₀ : OutWit m r → ℚ} {cs : Fin n → OutWit m r → ℚ},
+      (∀ (a : Fin n → ℤ), D.IsCentre a (centreFamily c₀ cs a)) →
+        ∀ {a₀ : Fin n → ℤ} {z₀ : OutWit m r → ℤ},
+          D.SolZ a₀ z₀ →
+            ∀ {e : OutWit m r → ℚ},
+              D.zQuadQ e = 0 → D.zPolarQ (toQ z₀ - centreFamily c₀ cs a₀) e ≠ 0 → WeakVectorCosetNF f
+info: SelectionS65/Corr.lean:55:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.weakVectorCosetNF_of_isotropic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:56:0: @weakVectorCosetNF_of_isotropicBranch : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  0 < m →
+    (∃ v, D.zQuad v ≠ 0) →
+      ∀ {e₀ : OutWit m r → ℚ},
+        D.zQuadQ e₀ = 0 → ¬D.InRadicalQ e₀ → ∀ {f : (Fin n → ℤ) → Fin m → ℤ}, D.Defines f → WeakVectorCosetNF f
+info: SelectionS65/Corr.lean:57:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.weakVectorCosetNF_of_isotropicBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:58:0: @linearGrowth_of_offCentre_radical : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  0 < m →
+    (∃ v, D.zQuad v ≠ 0) →
+      ∀ {c₀ : OutWit m r → ℚ} {cs : Fin n → OutWit m r → ℚ} {f : (Fin n → ℤ) → Fin m → ℤ},
+        D.Defines f →
+          (∀ (a : Fin n → ℤ) (z : OutWit m r → ℤ), D.SolZ a z → D.InRadicalQ (toQ z - centreFamily c₀ cs a)) →
+            LinearGrowth f
+info: SelectionS65/Corr.lean:59:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.linearGrowth_of_offCentre_radical' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:60:0: @linearGrowth_of_semidefinite_defines : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  0 < m →
+    (∀ (u : OutWit m r → ℚ), 0 ≤ D.zQuadQ u) →
+      (∃ v, D.zQuad v ≠ 0) → ∀ {f : (Fin n → ℤ) → Fin m → ℤ}, D.Defines f → LinearGrowth f
+info: SelectionS65/Corr.lean:61:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.linearGrowth_of_semidefinite_defines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:62:0: @outCoord_sq_le : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  (∀ (u : OutWit m r → ℚ), 0 ≤ D.zQuadQ u) →
+    ∀ {j : Fin m} {w : OutWit m r → ℚ},
+      (∀ (v : OutWit m r → ℚ), D.zPolarQ w v = v (Sum.inl j)) →
+        ∀ (v : OutWit m r → ℚ), v (Sum.inl j) ^ 2 ≤ 4 * D.zQuadQ w * D.zQuadQ v
+info: SelectionS65/Corr.lean:63:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.outCoord_sq_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:64:0: @linearGrowth_of_negSemidefinite_defines : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  0 < m →
+    (∀ (u : OutWit m r → ℚ), D.zQuadQ u ≤ 0) →
+      (∃ v, D.zQuad v ≠ 0) → ∀ {f : (Fin n → ℤ) → Fin m → ℤ}, D.Defines f → LinearGrowth f
+info: SelectionS65/Corr.lean:65:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.linearGrowth_of_negSemidefinite_defines' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:66:0: @exists_visible_orthogonal : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  0 < m →
+    ∀ {v u : OutWit m r → ℚ},
+      D.zQuadQ v * D.zQuadQ u < 0 →
+        ∃ w, D.zPolarQ v w = 0 ∧ D.zQuadQ v * D.zQuadQ w < 0 ∧ ((∃ j, v (Sum.inl j) ≠ 0) ∨ ∃ j, w (Sum.inl j) ≠ 0)
+info: SelectionS65/Corr.lean:67:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.exists_visible_orthogonal' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:68:0: @not_isSquare_of_quotientAnisotropic : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  (∀ (x : OutWit m r → ℚ), D.zQuadQ x = 0 → D.InRadicalQ x) →
+    ∀ {V W : OutWit m r → ℚ},
+      D.zPolarQ V W = 0 → D.zQuadQ V ≠ 0 → 0 < -(D.zQuadQ V * D.zQuadQ W) → ¬∃ s, s ^ 2 = -(D.zQuadQ V * D.zQuadQ W)
+info: SelectionS65/Corr.lean:69:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.not_isSquare_of_quotientAnisotropic' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:70:0: @exists_pell_unit_congr : ∀ {d : ℤ},
+  0 < d → ¬IsSquare d → ∀ (N : ℕ), 0 < N → ∃ T S, T * T - d * (S * S) = 1 ∧ 1 < T ∧ 0 < S ∧ ↑N ∣ T - 1 ∧ ↑N ∣ S
+info: SelectionS65/Corr.lean:71:0: 'DiophCompression.ResearchUpgrade.exists_pell_unit_congr' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SelectionS65/Corr.lean:72:0: @pell_branch_contradiction : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r) {f : (Fin n → ℤ) → Fin m → ℤ},
+  D.Defines f →
+    (∀ (x : OutWit m r → ℚ), D.zQuadQ x = 0 → D.InRadicalQ x) →
+      ∀ {a₀ : Fin n → ℤ} {z₀ : OutWit m r → ℤ},
+        D.SolZ a₀ z₀ →
+          ∀ {c : OutWit m r → ℚ},
+            D.IsCentre a₀ c →
+              ∀ {v w : OutWit m r → ℚ},
+                toQ z₀ - c = v →
+                  D.zPolarQ v w = 0 →
+                    D.zQuadQ v * D.zQuadQ w < 0 → ((∃ j, v (Sum.inl j) ≠ 0) ∨ ∃ j, w (Sum.inl j) ≠ 0) → False
+info: SelectionS65/Corr.lean:73:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.pell_branch_contradiction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:74:0: exists_graph_injective_pad : ∀ (n m : ℕ), n ≤ m → ∃ D f, D.Defines f ∧ Function.Injective f
+info: SelectionS65/Corr.lean:75:0: 'DiophCompression.ResearchUpgrade.exists_graph_injective_pad' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SelectionS65/Corr.lean:76:0: atomGraphZZ_capacity_eq_one : AtomGraphZZ 1 1 ∧ ∀ (n : ℕ), AtomGraphZZ 2 n → n ≤ 1
+info: SelectionS65/Corr.lean:77:0: 'DiophCompression.ResearchUpgrade.atomGraphZZ_capacity_eq_one' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:78:0: @dim_le_of_summit : ∀ {n m : ℕ} {f : (Fin n → ℤ) → Fin m → ℤ},
+  LinearGrowth f ∨ WeakVectorCosetNF f → Function.Injective f → n ≤ m
+info: SelectionS65/Corr.lean:79:0: 'DiophCompression.ResearchUpgrade.dim_le_of_summit' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: SelectionS65/Corr.lean:80:0: @summit_of_isotropicBranch : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  0 < m →
+    (∃ v, D.zQuad v ≠ 0) →
+      ∀ {e₀ : OutWit m r → ℚ},
+        D.zQuadQ e₀ = 0 →
+          ¬D.InRadicalQ e₀ → ∀ {f : (Fin n → ℤ) → Fin m → ℤ}, D.Defines f → LinearGrowth f ∨ WeakVectorCosetNF f
+info: SelectionS65/Corr.lean:81:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.summit_of_isotropicBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:82:0: @summit_of_quotientAnisotropicBranch : ∀ {n m r : ℕ} (D : QuadraticGraphData n m r),
+  0 < m →
+    (∃ x, D.zQuad x ≠ 0) →
+      (∀ (x : OutWit m r → ℚ), D.zQuadQ x = 0 → D.InRadicalQ x) →
+        ∀ {pp qq : OutWit m r → ℚ},
+          0 < D.zQuadQ pp →
+            D.zQuadQ qq < 0 → ∀ {f : (Fin n → ℤ) → Fin m → ℤ}, D.Defines f → LinearGrowth f ∨ WeakVectorCosetNF f
+info: SelectionS65/Corr.lean:83:0: 'DiophCompression.ResearchUpgrade.QuadraticGraphData.summit_of_quotientAnisotropicBranch' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/Corr.lean:84:0: DEPCHECK OK DiophCompression.ResearchUpgrade.singleQuadratic_sharp_iff: 23477 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth]
+info: SelectionS65/Corr.lean:85:0: DEPCHECK OK DiophCompression.ResearchUpgrade.singleQuadratic_injective_dimension_sharp: 23436 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth]
+info: SelectionS65/Corr.lean:86:0: DEPCHECK OK theorem2_sealed: 23189 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth]
+info: SelectionS65/Corr.lean:87:0: DEPCHECK OK DiophCompression.ResearchUpgrade.exists_pell_unit_congr: 13904 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth]
+✔ [8797/8800] Built SelectionS65.Conjunction (3.6s)
+ℹ [8798/8800] Built SelectionS65.PaperAudit (6.4s)
+info: SelectionS65/PaperAudit.lean:9:0: 'DiophCompression.ResearchUpgrade.SelectionS67.polyFn_SE2_iff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/PaperAudit.lean:10:0: 'DiophCompression.ResearchUpgrade.SelectionS67.polyFn_SE2_of_degree_le' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/PaperAudit.lean:11:0: 'DiophCompression.ResearchUpgrade.SelectionS67.totalDegree_le_two_of_linearGrowth' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/PaperAudit.lean:12:0: 'DiophCompression.ResearchUpgrade.SelectionS67.totalDegree_le_two_of_weakNF' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/PaperAudit.lean:13:0: 'DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_composition' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/PaperAudit.lean:14:0: 'DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_conjunction' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: SelectionS65/PaperAudit.lean:16:0: DEPCHECK OK DiophCompression.ResearchUpgrade.SelectionS67.polyFn_SE2_iff: 24282 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ UniformCodeGS,
+ uniformCodeGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth,
+ polynomial_graph_singleQuadratic_iff,
+ polynomial_graph_not_singleQuadratic_of_degree_ge_three]
+info: SelectionS65/PaperAudit.lean:17:0: DEPCHECK OK DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_composition: 24291 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth,
+ fourth_power_graph_not_singleQuadratic,
+ singleQuadratic_functions_not_closed_under_composition]
+info: SelectionS65/PaperAudit.lean:18:0: DEPCHECK OK DiophCompression.ResearchUpgrade.SelectionS67.not_closed_under_conjunction: 24305 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth]
+info: SelectionS65/PaperAudit.lean:20:0: DEPCHECK OK DiophCompression.ResearchUpgrade.QuadraticGraphData.summit_of_defines: 23087 constants, none matching [TCER,
+ TernaryCoset,
+ DPRM,
+ Grunewald,
+ uniformGS,
+ perEquationGS,
+ globalGS,
+ ProjectionDichotomy,
+ projectionDichotomy,
+ quadraticProjection,
+ graphZZ_singleQuadratic_growth,
+ singleQuadratic_function_quadratic_growth]
+✔ [8799/8800] Built SelectionS65 (3.2s)
+Build completed successfully (8800 jobs).
+LAKE_EXIT=0
+=== audit gate (fails unless every required root has exactly one std-3 axiom report and every
+    dependency-check root has exactly one DEPCHECK OK whose forbid list contains the registry)
+GATE SUMMARY: axiom_reports=570 required_axiom_roots=30 depcheck_ok=8 required_depcheck_roots=8 failures=0
+GATE_EXIT=0
+REPLAY_EXIT=0
